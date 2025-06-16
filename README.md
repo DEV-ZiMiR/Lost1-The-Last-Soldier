@@ -52,4 +52,4 @@ See all updates in [CHANGELOG.md](./CHANGELOG.md)
 ---
 
 ## 💬 Feedback / Ideas?
-[💡 Leave suggestions here →]([https://github.com/твій_репозиторій/discussions](https://github.com/DEV-ZiMiR/Lost1-The-Last-Soldier/discussions))
+[💡 Leave suggestions here →](https://github.com/DEV-ZiMiR/Lost1-The-Last-Soldier/discussions)
