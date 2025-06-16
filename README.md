@@ -29,6 +29,7 @@ In-game minimap
 (Maybe) main menu
 
 🔁 Changes
+
 Adjusted enemy count and positions
 
 Relocated house for better navigation
