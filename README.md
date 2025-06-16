@@ -19,6 +19,7 @@ New weapon added
 (Maybe) in-game market and currency system
 
 🖥️ New UI Elements
+
 Pause button
 
 "Open inventory" button
