@@ -1,0 +1,185 @@
+[gd_scene load_steps=21 format=3 uid="uid://bmuxjvvyriojq"]
+
+[ext_resource type="Texture2D" uid="uid://b5j4j566137pc" path="res://assets/Textures/MapMain/UI/GUI1.png" id="1_8isll"]
+[ext_resource type="FontFile" uid="uid://1yhfjd0e0144" path="res://assets/Fonts/Ubuntu-BoldItalic.ttf" id="1_jkj6h"]
+[ext_resource type="FontFile" uid="uid://y3dgscraj716" path="res://assets/Fonts/WDXLLubrifontTC-Regular.ttf" id="1_sk4pr"]
+[ext_resource type="Texture2D" uid="uid://bigr3yfx4v4iw" path="res://assets/Textures/MapMain/UI/GUI3.png" id="2_7ctsh"]
+[ext_resource type="Texture2D" uid="uid://cyxkkyemf4i26" path="res://assets/Textures/MapMain/UI/GUI7.png" id="4_g4s8q"]
+[ext_resource type="FontFile" uid="uid://bt0civ2kekjrg" path="res://assets/Fonts/Ubuntu-Medium.ttf" id="5_wsb5h"]
+[ext_resource type="Texture2D" uid="uid://nac8k8pp2ff5" path="res://assets/Textures/MapMain/UI/GUI5.png" id="6_g4s8q"]
+[ext_resource type="Texture2D" uid="uid://bhgcbmrbqrsvv" path="res://assets/Textures/MapMain/UI/GUI4.png" id="7_17uas"]
+[ext_resource type="Texture2D" uid="uid://daiyltugr4bg1" path="res://assets/Textures/MapMain/UI/GUI6.png" id="8_1c0bc"]
+[ext_resource type="Texture2D" uid="uid://dvcvdx4h813b6" path="res://assets/Textures/MapMain/UI/GUI8.png" id="10_1c0bc"]
+[ext_resource type="Script" uid="uid://dvk0js0dipwgl" path="res://scripts/restart_button.gd" id="10_7wyo6"]
+[ext_resource type="Texture2D" uid="uid://gpoxw2ll12l3" path="res://assets/Textures/MapMain/UI/GUI9.png" id="11_2tylp"]
+[ext_resource type="Texture2D" uid="uid://5vgoaqfkub55" path="res://assets/Textures/MapMain/Знімок екрана 2025-06-14 164720.png" id="11_7wyo6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_17uas"]
+texture = ExtResource("4_g4s8q")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2tylp"]
+texture = ExtResource("6_g4s8q")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7wyo6"]
+texture = ExtResource("7_17uas")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p7wxq"]
+texture = ExtResource("8_1c0bc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1jr8s"]
+texture = ExtResource("10_1c0bc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hqmfw"]
+texture = ExtResource("11_7wyo6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y6wb6"]
+texture = ExtResource("11_2tylp")
+
+[node name="PlayerUI" type="CanvasLayer"]
+
+[node name="PlayerHP" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 15
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PlayerHP"]
+custom_minimum_size = Vector2(200, 30)
+layout_direction = 2
+layout_mode = 2
+
+[node name="HPBar" type="TextureProgressBar" parent="PlayerHP/HBoxContainer"]
+custom_minimum_size = Vector2(200, 30)
+layout_mode = 2
+size_flags_horizontal = 3
+value = 100.0
+nine_patch_stretch = true
+texture_under = ExtResource("1_8isll")
+texture_progress = ExtResource("2_7ctsh")
+
+[node name="HPLabel" type="Label" parent="PlayerHP/HBoxContainer/HPBar"]
+texture_filter = 1
+layout_mode = 2
+offset_left = 75.0
+offset_top = 1.0
+offset_right = 125.0
+offset_bottom = 30.0
+theme_override_fonts/font = ExtResource("1_sk4pr")
+theme_override_font_sizes/font_size = 24
+text = "10/10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RestartMenu" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="RestartMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.287
+anchor_top = 0.137
+anchor_right = -0.287
+anchor_bottom = 0.137
+offset_left = -240.52
+offset_top = -171.48
+offset_right = 238.48
+offset_bottom = 167.52
+theme_override_styles/panel = SubResource("StyleBoxTexture_17uas")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="RestartMenu/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -177.5
+offset_top = -130.5
+offset_right = 175.5
+offset_bottom = 131.5
+alignment = 1
+
+[node name="Label" type="Label" parent="RestartMenu/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_jkj6h")
+theme_override_font_sizes/font_size = 45
+text = "You died"
+horizontal_alignment = 1
+
+[node name="Label1" type="Label" parent="RestartMenu/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_sk4pr")
+theme_override_font_sizes/font_size = 27
+text = "Money left: 0
+Time alive: 0
+Enemies killed: 0"
+
+[node name="RestartButton" type="Button" parent="RestartMenu/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_wsb5h")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxTexture_2tylp")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7wyo6")
+theme_override_styles/normal = SubResource("StyleBoxTexture_p7wxq")
+text = "Restart"
+script = ExtResource("10_7wyo6")
+
+[node name="PlayerAvatar" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 15
+
+[node name="Panel" type="Panel" parent="PlayerAvatar"]
+custom_minimum_size = Vector2(90, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_1jr8s")
+
+[node name="Panel" type="Panel" parent="PlayerAvatar/Panel"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 6.0
+offset_right = 51.0
+offset_bottom = 46.0
+scale = Vector2(1.68558, 1.45311)
+theme_override_styles/panel = SubResource("StyleBoxTexture_hqmfw")
+
+[node name="MoneyBar" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 45
+
+[node name="Panel" type="Panel" parent="MoneyBar"]
+clip_contents = true
+custom_minimum_size = Vector2(171.35, 40.1)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_y6wb6")
+
+[node name="Label" type="Label" parent="MoneyBar/Panel"]
+layout_mode = 0
+offset_top = 3.0
+offset_right = 167.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_sk4pr")
+theme_override_font_sizes/font_size = 25
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="RestartMenu/Panel/VBoxContainer/RestartButton" to="RestartMenu/Panel/VBoxContainer/RestartButton" method="_on_pressed"]
