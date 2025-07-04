@@ -4,44 +4,46 @@
 
 ---
 
-## [Alpha v0.4] – Coming Soon
+## [Alpha v0.5] – Coming Soon
 🆕 Coming Soon
-Weapon switching system
+In-game market system
+→ Buy & sell items using new currency
 
-Inventory system
+Monster loot improvements
 
-Item pickup mechanic
+New monsters with unique behaviors
 
-Enemy item drops
+Armor system (equipment + defense boost)
+
+New healing item
 
 New weapon added
 
-(Maybe) in-game market and currency system
+World map expansion
 
 🖥️ New UI Elements
 
-Pause button
-
-"Open inventory" button
-
-In-game minimap
-
-(Maybe) main menu
+Shop interface
+Currency display
+Inventory updates (armor slots)
 
 🔁 Changes
 
-Adjusted enemy count and positions
-
-Relocated house for better navigation
-
-Updated map with new locations
+Improved monster drops and rarity logic
+New enemy types integrated into existing zones
+Expanded map with new areas and details
 
 🐛 Bug Fixes
-All known bugs will be fixed before the Alpha v0.4 release
+All discovered bugs will be fixed before the Alpha v0.5 release
 
 ---
 
 ## 📦 Latest Release
+[👉 Download Alpha 0.4](https://github.com/DEV-ZiMiR/Lost1-The-Last-Soldier/releases/alpha-0.3)
+
+*(Released: 2025-07-04)*
+
+## Another Versions
 [👉 Download Alpha 0.3](https://github.com/DEV-ZiMiR/Lost1-The-Last-Soldier/releases/alpha-0.3)
 
 *(Released: 2025-06-16)*
