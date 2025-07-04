@@ -13,14 +13,14 @@
 
 ## [Alpha 0.4] - 2025-07-04
 
--weapon switching
--inventory system
--item pickup
--new weapon
--new UI: pause button, inventory button
--updated map and enemy placement
--moved house location
--fixed bugs:
+- weapon switching
+- inventory system
+- item pickup
+- new weapon
+- new UI: pause button, inventory button
+- updated map and enemy placement
+- moved house location
+- fixed bugs:
   - fall animation now ends when landing, not by timer
   - cannot slide without movement
   - enemy no longer resets attack if player is not idle
