@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://cf40p6sju21h5"]
+
+[ext_resource type="Texture2D" uid="uid://ch1egs3ohd0l7" path="res://assets/Textures/Items/wood_01a.png" id="1_46t5g"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_r6u3t"]
+
+[resource]
+script = ExtResource("1_r6u3t")
+id = "quest_enemy_drop1"
+item_name = "Cloth"
+description = "The first drop from enemy"
+icon = ExtResource("1_46t5g")
+is_stackable = true
+max_stack = 20
+type = 4
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 0
+is_equippable = false
+is_usable = false
+sort_priority = 1
+price = 3
+armor_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

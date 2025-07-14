@@ -1,12 +1,12 @@
 [gd_scene load_steps=54 format=3 uid="uid://c53wqrvh4ces8"]
 
-[ext_resource type="Texture2D" uid="uid://dcafos54eaygk" path="res://assets/Textures/MapMain/Skeleton/Attack.png" id="1_4cgod"]
+[ext_resource type="Texture2D" uid="uid://dcafos54eaygk" path="res://assets/Textures/MapMain/enemys/Skeleton/Attack.png" id="1_4cgod"]
 [ext_resource type="Script" uid="uid://bkpuydqkux1up" path="res://scripts/enemy(angry_man).gd" id="1_rwmqg"]
-[ext_resource type="Texture2D" uid="uid://w17i4auc14y2" path="res://assets/Textures/MapMain/Skeleton/Idle.png" id="2_4yotv"]
-[ext_resource type="Texture2D" uid="uid://pe6nimi2jkgw" path="res://assets/Textures/MapMain/Skeleton/Death.png" id="3_rwmqg"]
-[ext_resource type="Texture2D" uid="uid://8u20rejl7sih" path="res://assets/Textures/MapMain/Skeleton/Shield.png" id="4_tfrge"]
-[ext_resource type="Texture2D" uid="uid://digf6l7v2ov57" path="res://assets/Textures/MapMain/Skeleton/Take Hit.png" id="5_tpht8"]
-[ext_resource type="Texture2D" uid="uid://c88ay6udt2foc" path="res://assets/Textures/MapMain/Skeleton/Walk.png" id="6_8bqjl"]
+[ext_resource type="Texture2D" uid="uid://w17i4auc14y2" path="res://assets/Textures/MapMain/enemys/Skeleton/Idle.png" id="2_4yotv"]
+[ext_resource type="Texture2D" uid="uid://pe6nimi2jkgw" path="res://assets/Textures/MapMain/enemys/Skeleton/Death.png" id="3_rwmqg"]
+[ext_resource type="Texture2D" uid="uid://8u20rejl7sih" path="res://assets/Textures/MapMain/enemys/Skeleton/Shield.png" id="4_tfrge"]
+[ext_resource type="Texture2D" uid="uid://digf6l7v2ov57" path="res://assets/Textures/MapMain/enemys/Skeleton/Take Hit.png" id="5_tpht8"]
+[ext_resource type="Texture2D" uid="uid://c88ay6udt2foc" path="res://assets/Textures/MapMain/enemys/Skeleton/Walk.png" id="6_8bqjl"]
 [ext_resource type="PackedScene" uid="uid://ixtob3sqmkdd" path="res://scenes/enemy_attack(skeleton).tscn" id="7_4yotv"]
 [ext_resource type="Texture2D" uid="uid://rmkdxrtmu8tu" path="res://assets/Textures/MapMain/Bars/bar1.png" id="9_tpht8"]
 [ext_resource type="Texture2D" uid="uid://chwt52ovgebel" path="res://assets/Textures/MapMain/Bars/bars2.png" id="10_8bqjl"]
@@ -633,7 +633,7 @@ _data = {
 size = Vector2(16, 32)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rwmqg"]
-radius = 18.0278
+radius = 19.0263
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4yotv"]
 radius = 16.0
@@ -644,16 +644,19 @@ radius = 17.0
 height = 88.0
 
 [node name="Enemy(Angry man)" type="CharacterBody2D"]
+z_index = 9
 collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_rwmqg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-3, -16.5)
 scale = Vector2(0.601667, 0.633333)
 sprite_frames = SubResource("SpriteFrames_dxllm")
-animation = &"hit"
+animation = &"dodge"
 autoplay = "default"
-frame_progress = 0.41111
+frame = 3
+frame_progress = 0.894727
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -665,14 +668,16 @@ autoplay = "idle"
 position = Vector2(-1, -16)
 shape = SubResource("RectangleShape2D_ahsj6")
 
-[node name="Marker2D" type="Marker2D" parent="."]
+[node name="DropSpot" type="Marker2D" parent="."]
+position = Vector2(0, -11)
 
 [node name="EnemyAttack" parent="." instance=ExtResource("7_4yotv")]
 collision_layer = 3
 collision_mask = 253
+damage = 2
 
 [node name="CollisionShapeSigma" type="CollisionShape2D" parent="EnemyAttack"]
-position = Vector2(25, -18)
+position = Vector2(26, -18)
 shape = SubResource("CircleShape2D_rwmqg")
 disabled = true
 
@@ -708,6 +713,7 @@ value = 100.0
 nine_patch_stretch = true
 texture_under = ExtResource("9_tpht8")
 texture_progress = ExtResource("10_8bqjl")
+metadata/_edit_use_anchors_ = true
 
 [node name="hpbar_left" type="TextureProgressBar" parent="HPBar"]
 visible = false

@@ -1,7 +1,8 @@
 extends Area2D 
 
-@export var damage: int = 1
 @export var hit_once: bool = true
+
+@onready var Player: CharacterBody2D = get_tree().root.get_node("Game/Player")
 
 var already_hit: Array[Node] = []
 var attacker: Node = null  # 👈 Додано
@@ -19,7 +20,8 @@ func _on_body_entered(body: Node):
 		return
 
 	if body.has_method("take_damage"):
-		body.take_damage(damage)
+		Player.get_total_damage()
+		body.take_damage(Player.total_damage)
 		already_hit.append(body)
 
 func activate(attacker_node: Node):  # 👈 Передаємо, хто атакує

@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://bt1dps7vv08rj"]
+
+[ext_resource type="Texture2D" uid="uid://cpwqspe1gl8rl" path="res://assets/Textures/MapMain/UI/GUI10.png" id="1_kn8jx"]
+[ext_resource type="Texture2D" uid="uid://bal5gekcsfa5a" path="res://assets/Textures/MapMain/UI/GUI15.png" id="2_pmr7d"]
+[ext_resource type="Script" uid="uid://yf2msws5xdl4" path="res://scripts/armor_slot_ui.gd" id="3_5dwwy"]
+
+[node name="ArmorSlotUI" type="TextureButton"]
+z_index = 20
+custom_minimum_size = Vector2(66.5, 66.5)
+offset_right = 40.0
+offset_bottom = 40.0
+action_mode = 0
+texture_normal = ExtResource("1_kn8jx")
+texture_pressed = ExtResource("2_pmr7d")
+texture_hover = ExtResource("2_pmr7d")
+stretch_mode = 0
+script = ExtResource("3_5dwwy")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(55, 55)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.25
+offset_top = -29.25
+offset_right = 28.75
+offset_bottom = 28.75
+grow_horizontal = 2
+grow_vertical = 2

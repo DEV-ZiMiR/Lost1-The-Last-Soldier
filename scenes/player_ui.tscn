@@ -1,5 +1,6 @@
-[gd_scene load_steps=21 format=3 uid="uid://bmuxjvvyriojq"]
+[gd_scene load_steps=33 format=3 uid="uid://bmuxjvvyriojq"]
 
+[ext_resource type="Script" uid="uid://dc5qaet13or5n" path="res://scripts/player_ui.gd" id="1_1jr8s"]
 [ext_resource type="Texture2D" uid="uid://b5j4j566137pc" path="res://assets/Textures/MapMain/UI/GUI1.png" id="1_8isll"]
 [ext_resource type="FontFile" uid="uid://1yhfjd0e0144" path="res://assets/Fonts/Ubuntu-BoldItalic.ttf" id="1_jkj6h"]
 [ext_resource type="FontFile" uid="uid://y3dgscraj716" path="res://assets/Fonts/WDXLLubrifontTC-Regular.ttf" id="1_sk4pr"]
@@ -12,7 +13,18 @@
 [ext_resource type="Texture2D" uid="uid://dvcvdx4h813b6" path="res://assets/Textures/MapMain/UI/GUI8.png" id="10_1c0bc"]
 [ext_resource type="Script" uid="uid://dvk0js0dipwgl" path="res://scripts/restart_button.gd" id="10_7wyo6"]
 [ext_resource type="Texture2D" uid="uid://gpoxw2ll12l3" path="res://assets/Textures/MapMain/UI/GUI9.png" id="11_2tylp"]
-[ext_resource type="Texture2D" uid="uid://5vgoaqfkub55" path="res://assets/Textures/MapMain/Знімок екрана 2025-06-14 164720.png" id="11_7wyo6"]
+[ext_resource type="Texture2D" uid="uid://5vgoaqfkub55" path="res://assets/Textures/MapMain/other/Знімок екрана 2025-06-14 164720.png" id="11_7wyo6"]
+[ext_resource type="Texture2D" uid="uid://c83uo6skcukcg" path="res://assets/Textures/MapMain/UI/GUI16.png" id="15_hqmfw"]
+[ext_resource type="Texture2D" uid="uid://d4n2bwk0umh8y" path="res://assets/Textures/MapMain/UI/GUI18.png" id="16_odqdc"]
+[ext_resource type="Texture2D" uid="uid://dl02pt6ke8e42" path="res://assets/Textures/MapMain/UI/GUI17.png" id="17_ejfpv"]
+[ext_resource type="Texture2D" uid="uid://snllx4wxl17m" path="res://assets/Textures/MapMain/UI/GU19t.png" id="18_kkny0"]
+[ext_resource type="Script" uid="uid://pl7b5w5qshax" path="res://scripts/menu_button.gd" id="18_xfcjn"]
+[ext_resource type="Texture2D" uid="uid://bymt3u67id6yl" path="res://assets/Textures/MapMain/UI/GUI20.png" id="19_7f3qm"]
+[ext_resource type="Script" uid="uid://dx5h3ud0umjmo" path="res://scripts/inventory_button.gd" id="20_s20a4"]
+[ext_resource type="Texture2D" uid="uid://bn7keh54bulhi" path="res://assets/Textures/MapMain/UI/GUI21.png" id="20_xfcjn"]
+[ext_resource type="Script" uid="uid://040q1jt414y7" path="res://scripts/map_ui.gd" id="23_s20a4"]
+[ext_resource type="Texture2D" uid="uid://coe2ks8wlcvig" path="res://assets/Textures/MapMain/other/mapui.png" id="24_pb07a"]
+[ext_resource type="Texture2D" uid="uid://b5xla5u7yupee" path="res://assets/Textures/MapMain/UI/GUI23.png" id="25_1lq84"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_17uas"]
 texture = ExtResource("4_g4s8q")
@@ -36,12 +48,14 @@ texture = ExtResource("11_7wyo6")
 texture = ExtResource("11_2tylp")
 
 [node name="PlayerUI" type="CanvasLayer"]
+layer = 0
+script = ExtResource("1_1jr8s")
 
 [node name="PlayerHP" type="MarginContainer" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
-theme_override_constants/margin_left = 100
-theme_override_constants/margin_top = 15
+theme_override_constants/margin_left = 95
+theme_override_constants/margin_top = 60
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PlayerHP"]
 custom_minimum_size = Vector2(200, 30)
@@ -72,6 +86,7 @@ vertical_alignment = 1
 
 [node name="RestartMenu" type="Control" parent="."]
 visible = false
+z_index = -1
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -84,8 +99,10 @@ offset_right = 20.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="Panel" type="Panel" parent="RestartMenu"]
+z_index = -1
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.287
@@ -96,6 +113,7 @@ offset_left = -240.52
 offset_top = -171.48
 offset_right = 238.48
 offset_bottom = 167.52
+mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_17uas")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="RestartMenu/Panel"]
@@ -109,6 +127,7 @@ offset_left = -177.5
 offset_top = -130.5
 offset_right = 175.5
 offset_bottom = 131.5
+mouse_filter = 2
 alignment = 1
 
 [node name="Label" type="Label" parent="RestartMenu/Panel/VBoxContainer"]
@@ -142,8 +161,8 @@ script = ExtResource("10_7wyo6")
 [node name="PlayerAvatar" type="MarginContainer" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
-theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 15
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 60
 
 [node name="Panel" type="Panel" parent="PlayerAvatar"]
 custom_minimum_size = Vector2(90, 70)
@@ -162,8 +181,8 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_hqmfw")
 [node name="MoneyBar" type="MarginContainer" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
-theme_override_constants/margin_left = 100
-theme_override_constants/margin_top = 45
+theme_override_constants/margin_left = 95
+theme_override_constants/margin_top = 90
 
 [node name="Panel" type="Panel" parent="MoneyBar"]
 clip_contents = true
@@ -181,5 +200,146 @@ theme_override_font_sizes/font_size = 25
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="UIButtons" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UIButtons"]
+custom_minimum_size = Vector2(140, 0)
+layout_mode = 2
+
+[node name="MenuButton" type="TextureButton" parent="UIButtons/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture_normal = ExtResource("15_hqmfw")
+texture_pressed = ExtResource("16_odqdc")
+texture_hover = ExtResource("17_ejfpv")
+stretch_mode = 0
+script = ExtResource("18_xfcjn")
+
+[node name="TextureRect" type="TextureRect" parent="UIButtons/HBoxContainer/MenuButton"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("18_kkny0")
+
+[node name="InventoryButton" type="TextureButton" parent="UIButtons/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture_normal = ExtResource("15_hqmfw")
+texture_pressed = ExtResource("16_odqdc")
+texture_hover = ExtResource("17_ejfpv")
+stretch_mode = 0
+script = ExtResource("20_s20a4")
+
+[node name="TextureRect" type="TextureRect" parent="UIButtons/HBoxContainer/InventoryButton"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -15.0
+offset_top = -15.0
+offset_right = 15.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("19_7f3qm")
+
+[node name="DiaryButton" type="TextureButton" parent="UIButtons/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture_normal = ExtResource("15_hqmfw")
+texture_pressed = ExtResource("16_odqdc")
+texture_hover = ExtResource("17_ejfpv")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="UIButtons/HBoxContainer/DiaryButton"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -15.0
+offset_top = -15.0
+offset_right = 15.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_xfcjn")
+
+[node name="MiniMapUI" type="MarginContainer" parent="."]
+visible = false
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -20.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+
+[node name="Control" type="Control" parent="MiniMapUI"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+script = ExtResource("23_s20a4")
+
+[node name="MapContainer" type="Control" parent="MiniMapUI/Control"]
+clip_contents = true
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MapTexture" type="TextureRect" parent="MiniMapUI/Control/MapContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -309.0
+offset_top = -18.0
+offset_right = 2380.0
+offset_bottom = 173.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("24_pb07a")
+
+[node name="PlayerMarker" type="TextureRect" parent="MiniMapUI/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.426
+anchor_right = 0.5
+anchor_bottom = 0.426
+offset_left = -4.0
+offset_top = -4.90001
+offset_right = 46.0
+offset_bottom = 43.1
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.16, 0.165777)
+texture = ExtResource("25_1lq84")
 
 [connection signal="pressed" from="RestartMenu/Panel/VBoxContainer/RestartButton" to="RestartMenu/Panel/VBoxContainer/RestartButton" method="_on_pressed"]

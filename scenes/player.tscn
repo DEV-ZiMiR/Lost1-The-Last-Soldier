@@ -1,8 +1,8 @@
 [gd_scene load_steps=94 format=3 uid="uid://cau6wsyonkk1i"]
 
 [ext_resource type="Script" uid="uid://df3hil3vm8ubl" path="res://scripts/character_body_2d.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://bu00tpkwfp0e6" path="res://assets/Textures/MapMain/adventurer-v1.5-Sheet.png" id="2_dqkch"]
-[ext_resource type="Texture2D" uid="uid://dtadq48h0kqqv" path="res://assets/Textures/MapMain/adventurer-Sheet.png" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://bu00tpkwfp0e6" path="res://assets/Textures/MapMain/character/adventurer-v1.5-Sheet.png" id="2_dqkch"]
+[ext_resource type="Texture2D" uid="uid://dtadq48h0kqqv" path="res://assets/Textures/MapMain/character/adventurer-Sheet.png" id="2_qhqgy"]
 [ext_resource type="PackedScene" uid="uid://sdsc7eb368j6" path="res://scenes/hitbox(sword).tscn" id="3_qhqgy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3v2ag"]
@@ -1174,7 +1174,7 @@ tracks/7/keys = {
 
 [sub_resource type="Animation" id="Animation_ur7pv"]
 resource_name = "landing"
-length = 0.4
+length = 0.001
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -1219,7 +1219,7 @@ tracks/3/path = NodePath(".")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0.4),
+"times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
@@ -1689,17 +1689,20 @@ radius = 14.0
 height = 32.0
 
 [node name="Player" type="CharacterBody2D"]
+z_index = 10
 collision_layer = 3
 collision_mask = 255
 script = ExtResource("1_g2els")
+
+[node name="Target" type="Marker2D" parent="."]
+position = Vector2(0, -16)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -19)
 scale = Vector2(1, 1.08108)
 sprite_frames = SubResource("SpriteFrames_smehm")
-animation = &"die"
+animation = &"hit"
 autoplay = "idle"
-frame_progress = 0.427369
 
 [node name="idle_collision" type="CollisionShape2D" parent="."]
 position = Vector2(0, -15.5)
@@ -1746,8 +1749,7 @@ libraries = {
 }
 
 [node name="hitbox(sword)" parent="." instance=ExtResource("3_qhqgy")]
-visible = false
-collision_mask = 3
+collision_mask = 254
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox(sword)"]
 position = Vector2(16, -16)

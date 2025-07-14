@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://dm71vtgd2617y"]
+
+[ext_resource type="Texture2D" uid="uid://cdeiaeiyoqaam" path="res://assets/Textures/Items/sword_02a.png" id="1_ypjlr"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="2_6tme3"]
+
+[resource]
+script = ExtResource("2_6tme3")
+id = "weapon_wood_sword"
+item_name = "Wood sword"
+description = "Very weak weapon"
+icon = ExtResource("1_ypjlr")
+is_stackable = true
+max_stack = 1
+type = 2
+damage_bonus = 3
+armor_bonus = 0
+hp_bonus = 0
+is_equippable = true
+is_usable = false
+sort_priority = 3
+price = 10
+rarity = 0
+armor_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

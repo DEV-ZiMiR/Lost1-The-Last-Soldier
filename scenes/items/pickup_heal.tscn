@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3n1ia4jv6mfq"]
+
+[ext_resource type="Script" uid="uid://dkg582c2o1671" path="res://scripts/pickup_heal.gd" id="1_dqkv7"]
+[ext_resource type="Resource" uid="uid://blcof587aa77b" path="res://items/heal_3hp.tres" id="2_547dc"]
+[ext_resource type="Texture2D" uid="uid://b1hrqq5ug7qos" path="res://assets/Textures/Items/fruit_01a.png" id="3_dqkv7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bncvo"]
+radius = 19.0
+height = 72.0
+
+[node name="PickupHeal" type="Area2D"]
+z_index = 50
+script = ExtResource("1_dqkv7")
+item_data = ExtResource("2_547dc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_bncvo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_dqkv7")

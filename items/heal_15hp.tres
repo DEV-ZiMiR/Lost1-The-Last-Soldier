@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://dn3iskamf7vs0"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_1tmeh"]
+[ext_resource type="Texture2D" uid="uid://bll4jfn73geh5" path="res://assets/Textures/Items/potion_02a.png" id="1_a7uhw"]
+
+[resource]
+script = ExtResource("1_1tmeh")
+id = "heal_15hp"
+item_name = "Medium Potion"
+description = "Medium size, the best option for weak enemys!"
+icon = ExtResource("1_a7uhw")
+is_stackable = true
+max_stack = 5
+type = 1
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 15
+is_equippable = true
+is_usable = true
+sort_priority = 2
+price = 40
+rarity = 3
+armor_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

@@ -19,9 +19,14 @@ var current_state: State = State.IDLE
 @export var move_speed := 120
 @export var jump_force := -300
 @export var gravity := 900
+@export var gold: int = 150
 var facing_dir := 1
-var max_hp: int = 10
+var base_max_hp: int = 10  # 🆕 Додаємо базове HP
+var max_hp: int = base_max_hp  # І використовуємо його
 var hp: int = 10
+var total_damage: int = 0
+var base_damage: int = 1
+var bonus_damage: int = 0
 var is_invulnerable: bool = false
 var is_dead: bool = false
 
@@ -34,6 +39,7 @@ var input_direction := 0
 @onready var hp_bar: TextureProgressBar = $"../PlayerUI/PlayerHP/HBoxContainer/HPBar"
 @onready var hp_label: Label = $"../PlayerUI/PlayerHP/HBoxContainer/HPBar/HPLabel"
 @onready var restart_menu: Control = $"../PlayerUI/RestartMenu"
+
 # --- Керування ---
 func _physics_process(delta):	
 	apply_gravity(delta)
@@ -64,6 +70,14 @@ func _physics_process(delta):
 		State.SLIDE:
 			velocity.x = input_direction * move_speed * 1.3
 
+			# Якщо врізався у стіну — завершити слайд
+			if is_on_wall():
+				if abs(input_direction) > 0:
+					change_state(State.RUN)
+				else:
+					change_state(State.IDLE)
+
+
 		State.SITTING:
 			velocity.x = 0
 
@@ -93,7 +107,7 @@ func get_input():
 		if Input.is_action_just_pressed("jump"):
 			velocity.y = jump_force
 			change_state(State.JUMP)
-		elif Input.is_action_just_pressed("slide"):
+		elif Input.is_action_just_pressed("slide") and input_direction != 0:
 			change_state(State.SLIDE)
 		elif Input.is_action_just_pressed("sit"):
 			change_state(State.SITTING)
@@ -107,6 +121,9 @@ func get_input():
 
 
 func update_facing():
+	if current_state == State.ATTACK:
+		return
+		
 	if input_direction > 0:
 		sprite.flip_h = false
 		sword_hitbox.position.x = abs(sword_hitbox.position.x)
@@ -170,10 +187,11 @@ func change_state(new_state: State):
 			sprite.play("die")
 
 func _on_landing_finished():
-	if abs(input_direction) > 0:
-		change_state(State.RUN)
-	else:
-		change_state(State.IDLE)
+	if is_on_floor():
+		if abs(input_direction) > 0:
+			change_state(State.RUN)
+		else:
+			change_state(State.IDLE)
 
 func _on_sitting_finished():
 	change_state(State.SIT)
@@ -229,3 +247,27 @@ func on_death_animation_end():
 	Engine.time_scale = 0.1
 	restart_menu.visible = true
 	hide() # Сховати гравця
+
+func add_item_to_inventory(item_data: ItemData) -> bool:
+	return InventoryManager.add_item(item_data)
+
+func add_hp(amount: int):
+	hp = min(hp + amount, max_hp)
+	print("HP after heal:", hp, "/", max_hp)
+	update_hp_ui()
+
+#продовжувати функцію set_maxhp!!!
+func set_max_hp(new_max_hp: int):
+	max_hp = new_max_hp
+	hp = clamp(hp, 0, max_hp)
+	update_hp_ui()
+
+func add_damage(amount: int):
+	bonus_damage = amount
+	print("Bonus damage:", bonus_damage)
+
+func get_total_damage():
+	total_damage = base_damage + bonus_damage
+
+func get_current_state() -> State:
+	return current_state

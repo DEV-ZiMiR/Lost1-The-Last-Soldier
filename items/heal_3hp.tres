@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://blcof587aa77b"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_4twif"]
+[ext_resource type="Texture2D" uid="uid://b1hrqq5ug7qos" path="res://assets/Textures/Items/fruit_01a.png" id="1_l628v"]
+
+[resource]
+script = ExtResource("1_4twif")
+id = "heal_3hp"
+item_name = "Bandage"
+description = "The worst heal, but the cheapest too"
+icon = ExtResource("1_l628v")
+is_stackable = true
+max_stack = 10
+type = 1
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 3
+is_equippable = true
+is_usable = true
+sort_priority = 2
+price = 5
+rarity = 1
+armor_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

@@ -1,0 +1,54 @@
+[gd_scene load_steps=7 format=3 uid="uid://b0rxnyitxs7m7"]
+
+[ext_resource type="Script" uid="uid://c271h3upvxbph" path="res://scripts/pickup_item.gd" id="1_an7b5"]
+[ext_resource type="Resource" uid="uid://cf40p6sju21h5" path="res://items/enemy_drop1.tres" id="2_8tahl"]
+[ext_resource type="Texture2D" uid="uid://ch1egs3ohd0l7" path="res://assets/Textures/Items/wood_01a.png" id="3_m01xc"]
+[ext_resource type="FontFile" uid="uid://1yhfjd0e0144" path="res://assets/Fonts/Ubuntu-BoldItalic.ttf" id="4_m01xc"]
+[ext_resource type="FontFile" uid="uid://bt0civ2kekjrg" path="res://assets/Fonts/Ubuntu-Medium.ttf" id="5_3qe1u"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bncvo"]
+radius = 19.0
+height = 72.0
+
+[node name="PickupItem" type="Area2D"]
+z_index = 50
+script = ExtResource("1_an7b5")
+item_data = ExtResource("2_8tahl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_bncvo")
+
+[node name="Sprite2D" type="TextureRect" parent="."]
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_m01xc")
+
+[node name="NameLabel" type="Label" parent="."]
+visible = false
+z_index = 10
+offset_left = 7.0
+offset_top = -15.0
+offset_right = 1664.0
+offset_bottom = 390.0
+scale = Vector2(0.02, 0.02)
+theme_override_fonts/font = ExtResource("4_m01xc")
+theme_override_font_sizes/font_size = 360
+text = "Used Vest"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HintLabel" type="Label" parent="."]
+visible = false
+z_index = 10
+offset_left = 8.0
+offset_top = -7.0
+offset_right = 3078.0
+offset_bottom = 398.0
+scale = Vector2(0.008, 0.007)
+theme_override_fonts/font = ExtResource("5_3qe1u")
+theme_override_font_sizes/font_size = 360
+text = "Press [E] to pickup"

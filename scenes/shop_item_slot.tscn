@@ -1,0 +1,96 @@
+[gd_scene load_steps=11 format=3 uid="uid://c737u2q76mq04"]
+
+[ext_resource type="Script" uid="uid://dx6x55ua232xl" path="res://scripts/shop_item_slot.gd" id="1_6kxlq"]
+[ext_resource type="Texture2D" uid="uid://dvcvdx4h813b6" path="res://assets/Textures/MapMain/UI/GUI8.png" id="1_7qhvu"]
+[ext_resource type="Texture2D" uid="uid://srvhtgvjremt" path="res://assets/Textures/Items/sword_02c.png" id="3_vijei"]
+[ext_resource type="FontFile" uid="uid://y3dgscraj716" path="res://assets/Fonts/WDXLLubrifontTC-Regular.ttf" id="4_k4re6"]
+[ext_resource type="FontFile" uid="uid://1yhfjd0e0144" path="res://assets/Fonts/Ubuntu-BoldItalic.ttf" id="5_qnpj8"]
+[ext_resource type="Texture2D" uid="uid://daiyltugr4bg1" path="res://assets/Textures/MapMain/UI/GUI6.png" id="6_705aw"]
+[ext_resource type="Texture2D" uid="uid://bhgcbmrbqrsvv" path="res://assets/Textures/MapMain/UI/GUI4.png" id="7_jw28a"]
+[ext_resource type="Texture2D" uid="uid://nac8k8pp2ff5" path="res://assets/Textures/MapMain/UI/GUI5.png" id="8_uoqae"]
+[ext_resource type="FontFile" uid="uid://bt0civ2kekjrg" path="res://assets/Fonts/Ubuntu-Medium.ttf" id="9_026ep"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uob2f"]
+texture = ExtResource("1_7qhvu")
+texture_margin_left = 2.0
+texture_margin_top = 1.0
+texture_margin_right = 2.0
+texture_margin_bottom = 1.0
+
+[node name="ShopItemSlot" type="Panel"]
+custom_minimum_size = Vector2(450, 100)
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_uob2f")
+script = ExtResource("1_6kxlq")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 6.0
+offset_right = -5.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Icon" type="TextureRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+texture = ExtResource("3_vijei")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_k4re6")
+theme_override_font_sizes/font_size = 40
+text = "Iron Sword"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PriceLabel" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.854902, 0.721569, 0.235294, 1)
+theme_override_fonts/font = ExtResource("5_qnpj8")
+theme_override_font_sizes/font_size = 15
+text = "Price: 100 gold"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="ActionButton" type="TextureButton" parent="HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(120, 40)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 10
+texture_normal = ExtResource("6_705aw")
+texture_pressed = ExtResource("7_jw28a")
+texture_hover = ExtResource("8_uoqae")
+stretch_mode = 0
+
+[node name="ActionButtonLabel" type="Label" parent="HBoxContainer/VBoxContainer2/ActionButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_026ep")
+theme_override_font_sizes/font_size = 25
+text = "Buy"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AmountLabel" type="Label" parent="HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_qnpj8")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
