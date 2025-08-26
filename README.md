@@ -1,67 +1,74 @@
-# 🎮 Lost 1: The Last Soldier [Alpha]
+## [Alpha v0.7] – Coming Soon 🚀
 
-> A pixel 2D RPG made by a 14-year-old indie dev
+🔥 **The biggest and most exciting update yet!**  
+Alpha v0.7 brings real depth to the game: pets with unique buffs, a zoo shop, new weapons, teleport, an in-game time system, and a full Bestiary. This update makes the game more fun, alive, and diverse — giving the world new layers of strategy and exploration.
 
 ---
 
-## [Alpha v0.6] – Coming Soon
+### ✨ What’s New
+- **Pets + Zoo Shop**  
+  → Collect pets with buffs (speed, HP, damage, regen, shield, etc.). Buy boxes at the Zoo Shop, check rarity, and build your rarest collection.  
+- **New Weapons**  
+  → Automatic weapons (rifles) and improved projectile system with effects (fire, ice, poison) — new tactics and combat options.  
+- **Teleport Item**  
+  → Quickly return to the starting point when used — saving time and adding convenience.  
+- **Game Time System (Day/Night)**  
+  → Full cycle: 5 minutes = 1 in-game day (3 min day / 2 min night). Night adds atmosphere — darkening and shaders.  
+- **Bestiary (Monster, Location & Item Encyclopedia)**  
+  → Gather info about enemies, areas, and items — icons, stats, and descriptions.  
 
-🚨 Biggest update so far  
-This is the largest update yet — introducing full-game features like saving, a main menu, new areas, enemies, and core systems.  
-After this release, the game becomes fully playable from start to finish.
+---
 
-🆕 Coming Soon
+### 🖥️ Updated UI
+- Full pet menu: list, details, "Select", "Sell"  
+- Zoo Shop interface: daily offers, purchase limits, drop rate chances  
+- Bestiary UI with tabs: Monsters / Locations / Items  
+- Improved item icons and visual effects in interfaces  
 
-- Save & load system  
-  → Keep your progress between sessions  
-- Main menu  
-  → Start, continue, and exit from a proper interface  
-- Two new locations  
-  → Explore expanded zones with new encounters  
-- New monsters  
-  → Unique designs, behavior, and drop logic  
-- New equipment  
-  → Melee & ranged weapons, armor, healing items  
-- Monster spawners  
-  → Dynamic enemy generation in real-time  
-- Visual overhaul  
-  → Game logo, interface polish, and environmental effects  
-- Base settings menu  
-  → Adjust core gameplay options  
-- General improvements  
-  → Smoother animations, visual effects, better AI logic, and faster game flow  
+---
 
-🖥️ New UI Elements
+### 🗺️ Content & Gameplay Changes
+- **+2 new locations** — more areas to explore  
+- **+2 new monsters** — unique behavior & drops  
+- Improved drop system: stack drops (e.g. 20× coins) and refined drop chances  
+- Enemy spawners for dynamic raids  
 
-- Full main menu interface  
-- Save/load slot system  
-- Settings screen (basic options)  
-- Updated item visuals and effects  
+---
 
-🔁 Changes
+### 🛠️ Technical & QoL Improvements
+- Code refactor: split large scripts, better performance  
+- UX improvements in shops and inventory  
+- New animations, visual effects, and smarter AI for a more vivid gameplay  
 
-- Game world expanded with 2 new locations  
-- Monster spawning logic added  
-- Item system fully rebalanced  
-- New drop logic tied to enemy rarity  
-- Visuals polished across all scenes  
+---
 
-🐛 Bug Fixes
+### 🐛 Bug Fixes
+- Fixed minor inventory UI glitches  
+- Fixed drop issues and rare enemy physics bugs  
+- General stability and bug fixes after testing  
 
-All known bugs will be addressed before Alpha v0.6  
-Includes fixes to animation logic, enemy tracking, UI responsiveness, and item behavior
+---
 
-🔜 Playthrough-ready milestone  
-This update will mark the first fully playable version of the game — allowing players to start, progress, and complete the core gameplay loop.
+### 🎯 Why You Should Be Hyped
+Alpha v0.7 introduces **new ways to play**: pet collecting, tactical shooting with automatic weapons, a convenient teleport, immersive day/night cycle, and a complete Bestiary. This update massively expands the content and makes the game deeper, richer, and more replayable.  
+
+🔜 **Stay tuned — release coming soon!**  
+(Final polish and bugfixing are in progress)
 
 ---
 
 ## 📦 Latest Release
-[👉 Download Alpha 0.5](https://github.com/DEV-ZiMiR/Lost1-The-Last-Soldier/releases/tag/alpha-0.5)
+
+[👉 Download Alpha 0.6](https://github.com/DEV-ZiMiR/Lost1-The-Last-Soldier/releases/tag/alpha-0.6)
 
 *(Released: 2025-07-14)*
 
 ## Another Versions
+
+[👉 Download Alpha 0.5](https://github.com/DEV-ZiMiR/Lost1-The-Last-Soldier/releases/tag/alpha-0.5)
+
+*(Released: 2025-07-14)*
+
 [👉 Download Alpha 0.4](https://github.com/DEV-ZiMiR/Lost1-The-Last-Soldier/releases/tag/alpha-0.4)
 
 *(Realeased: 2025-07-04)*
