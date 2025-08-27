@@ -61,7 +61,7 @@ Alpha v0.7 introduces **new ways to play**: pet collecting, tactical shooting wi
 
 [👉 Download Alpha 0.6](https://github.com/DEV-ZiMiR/Lost1-The-Last-Soldier/releases/tag/alpha-0.6)
 
-*(Released: 2025-07-14)*
+*(Released: 2025-08-24)*
 
 ## Another Versions
 
