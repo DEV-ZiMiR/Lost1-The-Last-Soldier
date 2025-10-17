@@ -27,7 +27,7 @@
   - enemy stops tracking player during damage or death
   - slide animation ends on wall collision (returns to idle or run)
 
-### [Alpha 0.5] - 2025-07-14
+## [Alpha 0.5] - 2025-07-14
 
 - armor: vests, suits and helmets
 - 2 new enemy types with unique attacks
@@ -43,7 +43,7 @@
    - enemies could fly into the air after sliding collision
    - inventory UI glitches
 
-### [Alpha] 0.6 - 2025-08-24
+## [Alpha] 0.6 - 2025-08-24
 
 - saves and load saves
 - 2 new enemy types with unique attacks
@@ -58,7 +58,7 @@
    - enemy AI logic bugs
    - inventory UI glitches
 
-### [Alpha] 0.7 - 2025-10-13
+## [Alpha] 0.7 - 2025-10-13
 
 - pets and zoo shop system
 - automatic weapons (rifles) added
