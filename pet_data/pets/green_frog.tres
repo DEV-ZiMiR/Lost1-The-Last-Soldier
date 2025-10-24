@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="PetData" load_steps=5 format=3 uid="uid://bald88b6lkh8c"]
+
+[ext_resource type="Script" uid="uid://bavnx5oeawlh7" path="res://data/Helpers/PetBuff.gd" id="1_uxuct"]
+[ext_resource type="Texture2D" uid="uid://so2678lbdic3" path="res://assets/Textures/Characters/pets/Basic Sprites 1x5.png" id="2_18miq"]
+[ext_resource type="Script" uid="uid://0fg17lfakvk4" path="res://data/PetData.gd" id="2_q05je"]
+
+[sub_resource type="Resource" id="Resource_q05je"]
+script = ExtResource("1_uxuct")
+type = 1
+percent = 20.0
+metadata/_custom_type_script = "uid://bavnx5oeawlh7"
+
+[resource]
+script = ExtResource("2_q05je")
+id = "pet_green_frog"
+pet_name = "Green Frog"
+icon = ExtResource("2_18miq")
+rarity = 1
+buffs = Array[ExtResource("1_uxuct")]([SubResource("Resource_q05je")])
+price = 280
+sell_price = 270
+metadata/_custom_type_script = "uid://0fg17lfakvk4"

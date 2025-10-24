@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="PetData" load_steps=7 format=3 uid="uid://c8hcwcldg4max"]
+
+[ext_resource type="Script" uid="uid://bavnx5oeawlh7" path="res://data/Helpers/PetBuff.gd" id="1_drcrf"]
+[ext_resource type="Texture2D" uid="uid://gyuk7v1fqaue" path="res://assets/Textures/Characters/pets/Basic Sprites 1x1.png" id="2_h6l24"]
+[ext_resource type="Script" uid="uid://0fg17lfakvk4" path="res://data/PetData.gd" id="3_rc70r"]
+
+[sub_resource type="Resource" id="Resource_j6uqn"]
+script = ExtResource("1_drcrf")
+type = 1
+percent = 70.0
+metadata/_custom_type_script = "uid://bavnx5oeawlh7"
+
+[sub_resource type="Resource" id="Resource_22xap"]
+script = ExtResource("1_drcrf")
+type = 2
+percent = 200.0
+metadata/_custom_type_script = "uid://bavnx5oeawlh7"
+
+[sub_resource type="Resource" id="Resource_7fthn"]
+script = ExtResource("1_drcrf")
+type = 4
+percent = 100.0
+metadata/_custom_type_script = "uid://bavnx5oeawlh7"
+
+[resource]
+script = ExtResource("3_rc70r")
+id = "pet_lilu"
+pet_name = "Lilu"
+icon = ExtResource("2_h6l24")
+rarity = 5
+buffs = Array[ExtResource("1_drcrf")]([SubResource("Resource_j6uqn"), SubResource("Resource_22xap"), SubResource("Resource_7fthn")])
+price = 10000
+sell_price = 9500
+metadata/_custom_type_script = "uid://0fg17lfakvk4"

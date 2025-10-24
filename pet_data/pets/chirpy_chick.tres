@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="PetData" load_steps=5 format=3 uid="uid://48ftwaqmercu"]
+
+[ext_resource type="Script" uid="uid://bavnx5oeawlh7" path="res://data/Helpers/PetBuff.gd" id="1_h5nd3"]
+[ext_resource type="Script" uid="uid://0fg17lfakvk4" path="res://data/PetData.gd" id="2_y48hg"]
+[ext_resource type="Texture2D" uid="uid://cq546wsxyado7" path="res://assets/Textures/Characters/pets/Basic Sprites 2x1.png" id="2_y73c5"]
+
+[sub_resource type="Resource" id="Resource_5w88i"]
+script = ExtResource("1_h5nd3")
+type = 1
+percent = 5.0
+metadata/_custom_type_script = "uid://bavnx5oeawlh7"
+
+[resource]
+script = ExtResource("2_y48hg")
+id = "pet_chirpy_chick"
+pet_name = "Chirpy Chick"
+icon = ExtResource("2_y73c5")
+buffs = Array[ExtResource("1_h5nd3")]([SubResource("Resource_5w88i")])
+price = 100
+sell_price = 90
+metadata/_custom_type_script = "uid://0fg17lfakvk4"
