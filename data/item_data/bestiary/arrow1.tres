@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://di0hgfukr1n38"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_8e1hd"]
+[ext_resource type="Texture2D" uid="uid://dbg0tntidemyt" path="res://assets/Textures/Items/weapons/ranged/arrows/EB_50.png" id="1_o2de7"]
+
+[resource]
+script = ExtResource("1_8e1hd")
+entry_type = 1
+location = 4
+name = "Basic Arrow"
+description = "Basic arrow, wood stick with sharp metal on the end"
+rarity = 1
+icon = ExtResource("1_o2de7")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

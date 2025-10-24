@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://51mgb7tlrykt"]
+
+[ext_resource type="Texture2D" uid="uid://dx40v3w6ttfo3" path="res://assets/Textures/Items/weapons/ranged/guns/GunsPack/Guns/M24.png" id="1_hfbqa"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_kqmoy"]
+
+[resource]
+script = ExtResource("1_kqmoy")
+entry_type = 1
+location = 6
+name = "Sniper M24"
+description = "Very strong gun"
+rarity = 5
+icon = ExtResource("1_hfbqa")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

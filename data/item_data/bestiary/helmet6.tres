@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://cxw7jakkwttxa"]
+
+[ext_resource type="Texture2D" uid="uid://sk256qyjjgrs" path="res://assets/Textures/Items/armor/helmets/fb1912.png" id="1_ls102"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_xllv3"]
+
+[resource]
+script = ExtResource("1_xllv3")
+entry_type = 1
+location = 5
+name = "Helmet of Brave"
+description = "One legend says... nevermind"
+rarity = 5
+icon = ExtResource("1_ls102")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

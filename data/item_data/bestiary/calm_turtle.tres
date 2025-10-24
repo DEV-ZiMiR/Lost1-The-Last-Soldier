@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://chligbtqjx18q"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_13mv1"]
+[ext_resource type="Texture2D" uid="uid://oc0bx65p615v" path="res://assets/Textures/Characters/pets/Basic Sprites 1x7.png" id="1_cb0ub"]
+
+[resource]
+script = ExtResource("1_13mv1")
+entry_type = 2
+location = 0
+name = "Calm Turtle"
+description = "Really good pet, has OP buffs"
+rarity = 4
+icon = ExtResource("1_cb0ub")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="EnemyDropData" load_steps=13 format=3 uid="uid://u60w817uapgd"]
+
+[ext_resource type="Script" uid="uid://crluhw3owu5up" path="res://data/Drop/DropEntry.gd" id="1_xn1rw"]
+[ext_resource type="Script" uid="uid://ctiqkmbxlobk6" path="res://data/Drop/EnemyDropData.gd" id="2_4n6xa"]
+[ext_resource type="Resource" uid="uid://cf40p6sju21h5" path="res://data/item_data/items/enemy_drop1.tres" id="2_fe8jc"]
+[ext_resource type="Resource" uid="uid://bejwr5e706mdu" path="res://data/item_data/items/enemy_drop2.tres" id="3_1phuv"]
+[ext_resource type="Resource" uid="uid://c8fjomob886fq" path="res://data/item_data/items/enemy_drop3.tres" id="4_ynhdu"]
+[ext_resource type="Resource" uid="uid://ybt6dvvsk5kf" path="res://data/item_data/items/armor_vest1.tres" id="5_n5jcq"]
+[ext_resource type="Resource" uid="uid://dr7ii83ebuje4" path="res://data/item_data/items/sword2.tres" id="6_o4i3b"]
+
+[sub_resource type="Resource" id="Resource_kt8uk"]
+script = ExtResource("1_xn1rw")
+item = ExtResource("2_fe8jc")
+drop_chance = 30
+metadata/_custom_type_script = "uid://crluhw3owu5up"
+
+[sub_resource type="Resource" id="Resource_7fdy4"]
+script = ExtResource("1_xn1rw")
+item = ExtResource("3_1phuv")
+drop_chance = 40
+metadata/_custom_type_script = "uid://crluhw3owu5up"
+
+[sub_resource type="Resource" id="Resource_e5pct"]
+script = ExtResource("1_xn1rw")
+item = ExtResource("4_ynhdu")
+drop_chance = 20
+metadata/_custom_type_script = "uid://crluhw3owu5up"
+
+[sub_resource type="Resource" id="Resource_xxlox"]
+script = ExtResource("1_xn1rw")
+item = ExtResource("5_n5jcq")
+drop_chance = 8
+metadata/_custom_type_script = "uid://crluhw3owu5up"
+
+[sub_resource type="Resource" id="Resource_cm755"]
+script = ExtResource("1_xn1rw")
+item = ExtResource("6_o4i3b")
+drop_chance = 2
+metadata/_custom_type_script = "uid://crluhw3owu5up"
+
+[resource]
+script = ExtResource("2_4n6xa")
+drop_entries = Array[ExtResource("1_xn1rw")]([SubResource("Resource_kt8uk"), SubResource("Resource_7fdy4"), SubResource("Resource_e5pct"), SubResource("Resource_xxlox"), SubResource("Resource_cm755")])
+metadata/_custom_type_script = "uid://ctiqkmbxlobk6"

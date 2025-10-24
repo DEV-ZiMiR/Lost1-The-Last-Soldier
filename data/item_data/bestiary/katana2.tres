@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://coflj804wc55n"]
+
+[ext_resource type="Texture2D" uid="uid://hed22q24mhn3" path="res://assets/Textures/Items/weapons/melee/katanas/sword_01c.png" id="1_4vqgs"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_36idh"]
+
+[resource]
+script = ExtResource("1_36idh")
+entry_type = 1
+location = 4
+name = "Katana of the UE"
+description = "katana of the united empires, is 1 of 12 made katanas in 12 centurie"
+rarity = 4
+icon = ExtResource("1_4vqgs")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

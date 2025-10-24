@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://65ae2hehof7c"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_5m2u3"]
+[ext_resource type="Texture2D" uid="uid://cyqcx4p735hw7" path="res://assets/Textures/Items/materials/pearl_01d.png" id="1_7jyq8"]
+
+[resource]
+script = ExtResource("1_5m2u3")
+entry_type = 1
+location = 3
+name = "Green Pearl"
+description = "Pretty rare and expensive pearl"
+rarity = 3
+icon = ExtResource("1_7jyq8")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

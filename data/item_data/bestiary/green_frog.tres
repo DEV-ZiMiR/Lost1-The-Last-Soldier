@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://5k6te34hfwv3"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_scuuo"]
+[ext_resource type="Texture2D" uid="uid://so2678lbdic3" path="res://assets/Textures/Characters/pets/Basic Sprites 1x5.png" id="1_tcnfn"]
+
+[resource]
+script = ExtResource("1_scuuo")
+entry_type = 2
+location = 0
+name = "Green Frog"
+description = "One of basic pets, nothing special"
+rarity = 1
+icon = ExtResource("1_tcnfn")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

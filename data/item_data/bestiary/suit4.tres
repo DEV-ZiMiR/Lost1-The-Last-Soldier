@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://cjf8djgx5eutd"]
+
+[ext_resource type="Texture2D" uid="uid://coyvmmr7g0t31" path="res://assets/Textures/Items/armor/suits/fb1868.png" id="1_1l3j6"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_n24g0"]
+
+[resource]
+script = ExtResource("1_n24g0")
+entry_type = 1
+location = 3
+name = "Samurai Suit"
+description = "Were used by samuraes"
+rarity = 3
+icon = ExtResource("1_1l3j6")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

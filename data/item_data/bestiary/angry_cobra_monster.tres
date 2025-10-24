@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://funq80njlkn"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_78nhi"]
+[ext_resource type="Texture2D" uid="uid://dxbiv82agi6sm" path="res://assets/Textures/UI/bestiary/cobra_icon.png" id="1_wuyfx"]
+
+[resource]
+script = ExtResource("1_78nhi")
+location = 4
+name = "Angry Cobra"
+description = "Really dangerous, has two types of attack - both are relly deadly"
+rarity = 2
+icon = ExtResource("1_wuyfx")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

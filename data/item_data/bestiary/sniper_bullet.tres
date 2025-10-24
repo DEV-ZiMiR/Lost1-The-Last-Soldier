@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://cy7bdumjy0sai"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_hxec6"]
+[ext_resource type="Texture2D" uid="uid://ea6ffxghpsex" path="res://assets/Textures/Items/weapons/ranged/guns/GunsPack/Bullets/RifleAmmoBig.png" id="1_tj4tw"]
+
+[resource]
+script = ExtResource("1_hxec6")
+entry_type = 1
+location = 6
+name = "Sniper Bullet"
+description = "Very big and strong, perfect for killing healthy monsters"
+rarity = 4
+icon = ExtResource("1_tj4tw")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

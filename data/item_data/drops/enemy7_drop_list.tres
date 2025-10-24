@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="EnemyDropData" load_steps=9 format=3 uid="uid://dgwnhuoc4444s"]
+
+[ext_resource type="Script" uid="uid://crluhw3owu5up" path="res://data/Drop/DropEntry.gd" id="1_2v0q2"]
+[ext_resource type="Script" uid="uid://ctiqkmbxlobk6" path="res://data/Drop/EnemyDropData.gd" id="2_tg286"]
+
+[sub_resource type="Resource" id="Resource_lsmiv"]
+script = ExtResource("1_2v0q2")
+metadata/_custom_type_script = "uid://crluhw3owu5up"
+
+[sub_resource type="Resource" id="Resource_jat4x"]
+script = ExtResource("1_2v0q2")
+metadata/_custom_type_script = "uid://crluhw3owu5up"
+
+[sub_resource type="Resource" id="Resource_otk2v"]
+script = ExtResource("1_2v0q2")
+metadata/_custom_type_script = "uid://crluhw3owu5up"
+
+[sub_resource type="Resource" id="Resource_oxfaj"]
+script = ExtResource("1_2v0q2")
+metadata/_custom_type_script = "uid://crluhw3owu5up"
+
+[sub_resource type="Resource" id="Resource_c5nv4"]
+script = ExtResource("1_2v0q2")
+metadata/_custom_type_script = "uid://crluhw3owu5up"
+
+[sub_resource type="Resource" id="Resource_7ljaa"]
+script = ExtResource("1_2v0q2")
+metadata/_custom_type_script = "uid://crluhw3owu5up"
+
+[resource]
+script = ExtResource("2_tg286")
+drop_entries = Array[ExtResource("1_2v0q2")]([SubResource("Resource_lsmiv"), SubResource("Resource_jat4x"), SubResource("Resource_otk2v"), SubResource("Resource_oxfaj"), SubResource("Resource_c5nv4"), SubResource("Resource_7ljaa")])
+metadata/_custom_type_script = "uid://ctiqkmbxlobk6"

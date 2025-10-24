@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://rupu7nhatu5u"]
+
+[ext_resource type="Texture2D" uid="uid://c7xgnefl0dti3" path="res://assets/Textures/Items/armor/vests/armor_01d.png" id="1_fyxlc"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_pa46i"]
+
+[resource]
+script = ExtResource("1_pa46i")
+entry_type = 1
+location = 3
+name = "Vest of Heroes"
+description = "Were used by the one of the best warriors!"
+rarity = 3
+icon = ExtResource("1_fyxlc")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

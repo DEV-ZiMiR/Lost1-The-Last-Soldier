@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://dexocesiybd3o"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_bh32u"]
+[ext_resource type="Texture2D" uid="uid://bug6mygu61at7" path="res://assets/Textures/Items/weapons/melee/katanas/sword_01b.png" id="1_rhko1"]
+
+[resource]
+script = ExtResource("1_bh32u")
+entry_type = 1
+location = 3
+name = "Basic Katana"
+description = "Some samuraes even got here, to save their weapons"
+rarity = 3
+icon = ExtResource("1_rhko1")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

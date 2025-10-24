@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://cxeyw1ai46gem"]
+
+[ext_resource type="Texture2D" uid="uid://43gem2blq2tq" path="res://assets/Textures/Items/armor/helmets/helmet_02e.png" id="1_l7hmi"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_x3d41"]
+
+[resource]
+script = ExtResource("1_x3d41")
+entry_type = 1
+location = 4
+name = "Helmet \"2033\""
+description = "Anybody knows where it's from, but who cares?"
+rarity = 4
+icon = ExtResource("1_l7hmi")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

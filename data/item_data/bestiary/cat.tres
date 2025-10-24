@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://c2sgntrm0eb65"]
+
+[ext_resource type="Texture2D" uid="uid://dql5hjlw6fpul" path="res://assets/Textures/Characters/pets/Basic Sprites 1x4.png" id="1_7grj5"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_sq52y"]
+
+[resource]
+script = ExtResource("1_sq52y")
+entry_type = 2
+location = 0
+name = "Cat"
+description = "Not bad at all, has pretty good buffs"
+rarity = 2
+icon = ExtResource("1_7grj5")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

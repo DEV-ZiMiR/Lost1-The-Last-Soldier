@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://b8xxfxcl2lswf"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_0eti2"]
+[ext_resource type="Texture2D" uid="uid://ctfffeffto31e" path="res://assets/Textures/Items/potions/cup_02b.png" id="1_3uajg"]
+
+[resource]
+script = ExtResource("1_0eti2")
+entry_type = 1
+location = 4
+name = "Jungle Tea"
+description = "Really strong potion, but also very tasty!"
+rarity = 5
+icon = ExtResource("1_3uajg")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

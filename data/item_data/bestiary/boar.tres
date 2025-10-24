@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://c7pyjenlcouir"]
+
+[ext_resource type="Texture2D" uid="uid://c4u8p4u7dre28" path="res://assets/Textures/Characters/pets/Basic Sprites 2x.png" id="1_82675"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_k0etj"]
+
+[resource]
+script = ExtResource("1_k0etj")
+entry_type = 2
+location = 0
+name = "Boar"
+description = "Better tham most of pets, has good buff"
+rarity = 3
+icon = ExtResource("1_82675")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

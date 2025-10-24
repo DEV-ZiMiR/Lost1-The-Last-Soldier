@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="CaseData" load_steps=14 format=3 uid="uid://bndwh2p8esuhm"]
+
+[ext_resource type="Script" uid="uid://k3ptpovh12s7" path="res://data/Helpers/CaseReward.gd" id="1_u1ce3"]
+[ext_resource type="Texture2D" uid="uid://b2ctwdrtuy0bk" path="res://assets/Textures/Items/misc/boxes_SpriteSheet1.png" id="1_ym7th"]
+[ext_resource type="Script" uid="uid://bxl3xnfno4wfj" path="res://data/CaseData.gd" id="2_ym7th"]
+[ext_resource type="Resource" uid="uid://ecw3sb3gv7sl" path="res://data/item_data/items/ar1.tres" id="3_wf70k"]
+[ext_resource type="Resource" uid="uid://1dkndffr32bv" path="res://data/item_data/items/ar2.tres" id="4_dbiwa"]
+[ext_resource type="Resource" uid="uid://7dnufmcwuug4" path="res://data/item_data/items/pistol1.tres" id="5_u7jmd"]
+[ext_resource type="Resource" uid="uid://cd8l40nh6uto4" path="res://data/item_data/items/pistol2.tres" id="6_jtccy"]
+[ext_resource type="Resource" uid="uid://brjs1bfy6n8t3" path="res://data/item_data/items/sniper1.tres" id="7_dbiwa"]
+
+[sub_resource type="Resource" id="Resource_1qft4"]
+script = ExtResource("1_u1ce3")
+item = ExtResource("5_u7jmd")
+chance = 30.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_7lcyg"]
+script = ExtResource("1_u1ce3")
+item = ExtResource("6_jtccy")
+chance = 25.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_p75iy"]
+script = ExtResource("1_u1ce3")
+item = ExtResource("3_wf70k")
+chance = 20.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_78im3"]
+script = ExtResource("1_u1ce3")
+item = ExtResource("4_dbiwa")
+chance = 15.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_qtkl5"]
+script = ExtResource("1_u1ce3")
+item = ExtResource("7_dbiwa")
+chance = 10.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[resource]
+script = ExtResource("2_ym7th")
+id = "case_gun_shiny"
+case_name = "Basic Gun Case"
+icon = ExtResource("1_ym7th")
+rarity = 5
+price = 5000
+rewards = Array[ExtResource("1_u1ce3")]([SubResource("Resource_1qft4"), SubResource("Resource_7lcyg"), SubResource("Resource_p75iy"), SubResource("Resource_78im3"), SubResource("Resource_qtkl5")])
+metadata/_custom_type_script = "uid://bxl3xnfno4wfj"

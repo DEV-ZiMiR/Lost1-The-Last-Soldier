@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://btadlrnpouwlu"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_q2ipj"]
+[ext_resource type="Texture2D" uid="uid://dww7j5vms8d3t" path="res://assets/Textures/UI/bestiary/fired_monster_icon.png" id="1_u1k1a"]
+
+[resource]
+script = ExtResource("1_q2ipj")
+location = 2
+name = "Fire Worm"
+description = "It attacks with 3 fireballs!"
+rarity = 1
+icon = ExtResource("1_u1k1a")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

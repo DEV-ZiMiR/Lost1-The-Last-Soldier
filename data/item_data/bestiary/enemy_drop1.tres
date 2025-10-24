@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://3oply071ls0d"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_58di0"]
+[ext_resource type="Texture2D" uid="uid://ch1egs3ohd0l7" path="res://assets/Textures/Items/materials/wood_01a.png" id="1_usisp"]
+
+[resource]
+script = ExtResource("1_58di0")
+entry_type = 1
+location = 0
+name = "Cloth"
+description = "The first drop from enemy"
+icon = ExtResource("1_usisp")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

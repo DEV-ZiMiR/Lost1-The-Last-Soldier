@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="CaseData" load_steps=14 format=3 uid="uid://dhnwqmlh70g5e"]
+
+[ext_resource type="Texture2D" uid="uid://b2ctwdrtuy0bk" path="res://assets/Textures/Items/misc/boxes_SpriteSheet1.png" id="1_dtg0k"]
+[ext_resource type="Script" uid="uid://k3ptpovh12s7" path="res://data/Helpers/CaseReward.gd" id="1_fmv61"]
+[ext_resource type="Script" uid="uid://bxl3xnfno4wfj" path="res://data/CaseData.gd" id="2_7hb4t"]
+[ext_resource type="Resource" uid="uid://cypmtbryeaner" path="res://data/pet_data/pets/healthy_pig.tres" id="3_j7gok"]
+[ext_resource type="Resource" uid="uid://dvixda63kvxs0" path="res://data/pet_data/pets/cool_sheep.tres" id="4_dp5yj"]
+[ext_resource type="Resource" uid="uid://bcxx1yoyc1x8j" path="res://data/pet_data/pets/boar.tres" id="5_44n4w"]
+[ext_resource type="Resource" uid="uid://bgk3dsvlili0l" path="res://data/pet_data/pets/skunk.tres" id="6_gvmtf"]
+[ext_resource type="Resource" uid="uid://du05k61q1gqvx" path="res://data/pet_data/pets/porcupine.tres" id="7_4ror5"]
+
+[sub_resource type="Resource" id="Resource_uuwie"]
+script = ExtResource("1_fmv61")
+type = 1
+pet = ExtResource("3_j7gok")
+chance = 25.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_0lnrw"]
+script = ExtResource("1_fmv61")
+type = 1
+pet = ExtResource("4_dp5yj")
+chance = 25.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_w2g6y"]
+script = ExtResource("1_fmv61")
+type = 1
+pet = ExtResource("5_44n4w")
+chance = 20.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_rl5nw"]
+script = ExtResource("1_fmv61")
+type = 1
+pet = ExtResource("7_4ror5")
+chance = 20.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_s58ie"]
+script = ExtResource("1_fmv61")
+type = 1
+pet = ExtResource("6_gvmtf")
+chance = 10.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[resource]
+script = ExtResource("2_7hb4t")
+id = "case_pet_brighty"
+case_name = "Brighty Pet Case"
+icon = ExtResource("1_dtg0k")
+rarity = 4
+price = 1000
+rewards = Array[ExtResource("1_fmv61")]([SubResource("Resource_uuwie"), SubResource("Resource_0lnrw"), SubResource("Resource_w2g6y"), SubResource("Resource_rl5nw"), SubResource("Resource_s58ie")])
+metadata/_custom_type_script = "uid://bxl3xnfno4wfj"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://b0e8248p5jk7w"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_6gp3v"]
+[ext_resource type="Texture2D" uid="uid://bvosl7tkv0s8t" path="res://assets/Textures/UI/bestiary/wizard_icon.png" id="1_8vm7l"]
+
+[resource]
+script = ExtResource("1_6gp3v")
+location = 5
+name = "Evil Wizard"
+description = "Very strong, with two attacks wizard. "
+rarity = 3
+icon = ExtResource("1_8vm7l")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

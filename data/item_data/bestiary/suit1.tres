@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://butvo34fhj6kc"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_crqdu"]
+[ext_resource type="Texture2D" uid="uid://y8ji3bnqmmjb" path="res://assets/Textures/Items/armor/suits/fb1876.png" id="1_ra5v8"]
+
+[resource]
+script = ExtResource("1_crqdu")
+entry_type = 1
+location = 0
+name = "Used Suit"
+description = "Basic used millitary clothes"
+icon = ExtResource("1_ra5v8")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

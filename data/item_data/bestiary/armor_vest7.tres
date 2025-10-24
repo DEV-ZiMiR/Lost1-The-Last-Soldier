@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://bkt3shfx1mgj8"]
+
+[ext_resource type="Texture2D" uid="uid://celmey48k0xrr" path="res://assets/Textures/Items/armor/vests/fb2049.png" id="1_f6lqq"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_k8plx"]
+
+[resource]
+script = ExtResource("1_k8plx")
+entry_type = 1
+location = 6
+name = "Vest 3865-S"
+description = "Best vest in this city"
+rarity = 5
+icon = ExtResource("1_f6lqq")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

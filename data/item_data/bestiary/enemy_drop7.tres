@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://bc1l6hpjrd6ja"]
+
+[ext_resource type="Texture2D" uid="uid://bfn17h0o8ttd1" path="res://assets/Textures/Items/materials/crystal_01a.png" id="1_24fwm"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_gnhj5"]
+
+[resource]
+script = ExtResource("1_gnhj5")
+entry_type = 1
+location = 4
+name = "Heart of Jungle"
+description = "Very rare diamond"
+rarity = 4
+icon = ExtResource("1_24fwm")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

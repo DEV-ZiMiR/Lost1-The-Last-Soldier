@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://cu8yvtuynrlob"]
+
+[ext_resource type="Texture2D" uid="uid://fwg1n5wdk4lh" path="res://assets/Textures/Items/armor/helmets/helmet_02a.png" id="1_d163p"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_gwklb"]
+
+[resource]
+script = ExtResource("1_gwklb")
+entry_type = 1
+location = 0
+name = "Cap"
+description = "Was created not for fighiting, but also can protect!"
+icon = ExtResource("1_d163p")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://x0w2y1ownqfg"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_s2kww"]
+[ext_resource type="Texture2D" uid="uid://gyuk7v1fqaue" path="res://assets/Textures/Characters/pets/Basic Sprites 1x1.png" id="1_vbdwe"]
+
+[resource]
+script = ExtResource("1_s2kww")
+entry_type = 2
+location = 0
+name = "Lilu"
+description = "One of the best pet in the game, has one of the best possible buffs"
+rarity = 5
+icon = ExtResource("1_vbdwe")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

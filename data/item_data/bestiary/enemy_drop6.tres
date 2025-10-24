@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://do7h32qoioq2q"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_iec35"]
+[ext_resource type="Texture2D" uid="uid://d27ttpd8yf4vj" path="res://assets/Textures/Items/materials/gem_01c.png" id="1_r1o8j"]
+
+[resource]
+script = ExtResource("1_iec35")
+entry_type = 1
+location = 2
+name = "Crystal of Sadness"
+description = "Crystal, that used in different types of swords"
+rarity = 3
+icon = ExtResource("1_r1o8j")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

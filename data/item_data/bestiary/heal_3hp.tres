@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://cf5gpph5c1ue1"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_bytk2"]
+[ext_resource type="Texture2D" uid="uid://b1hrqq5ug7qos" path="res://assets/Textures/Items/potions/fruit_01a.png" id="1_pmi3u"]
+
+[resource]
+script = ExtResource("1_bytk2")
+entry_type = 1
+location = 0
+name = "Bandage"
+description = "The worst heal, but the cheapest too"
+rarity = 1
+icon = ExtResource("1_pmi3u")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

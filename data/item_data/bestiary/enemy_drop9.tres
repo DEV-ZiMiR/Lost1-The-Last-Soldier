@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://bk3ig78qbfwm1"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_60u7k"]
+[ext_resource type="Texture2D" uid="uid://cbgfop3nnhnnj" path="res://assets/Textures/Items/materials/fb320.png" id="1_h0rb3"]
+
+[resource]
+script = ExtResource("1_60u7k")
+entry_type = 1
+location = 5
+name = "Very Demonic Stone"
+description = "Maybe this stone destroyed this kinght"
+rarity = 5
+icon = ExtResource("1_h0rb3")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

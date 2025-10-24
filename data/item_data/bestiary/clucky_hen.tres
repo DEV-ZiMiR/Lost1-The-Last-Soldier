@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://dia8t8xku0fq1"]
+
+[ext_resource type="Texture2D" uid="uid://bcijgpxsfhd25" path="res://assets/Textures/Characters/pets/Basic Sprites 2x2.png" id="1_anr42"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_syhvk"]
+
+[resource]
+script = ExtResource("1_syhvk")
+entry_type = 2
+location = 0
+name = "Clucky Hen"
+description = "One of basic pets, nothing special"
+rarity = 1
+icon = ExtResource("1_anr42")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

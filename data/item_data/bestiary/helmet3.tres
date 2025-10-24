@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://cwcheelxntxns"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_lwger"]
+[ext_resource type="Texture2D" uid="uid://d3im1oj6g7xo6" path="res://assets/Textures/Items/armor/helmets/helmet_02c.png" id="1_vhduy"]
+
+[resource]
+script = ExtResource("1_lwger")
+entry_type = 1
+location = 2
+name = "Millitary Helmet"
+description = "Protects from hits and blows!"
+rarity = 2
+icon = ExtResource("1_vhduy")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

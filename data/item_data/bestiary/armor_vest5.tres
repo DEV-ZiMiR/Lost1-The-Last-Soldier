@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://de5xci0g8alll"]
+
+[ext_resource type="Texture2D" uid="uid://cvmlmg3cyu1to" path="res://assets/Textures/Items/armor/vests/armor_01e.png" id="1_44j7x"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_ylhpq"]
+
+[resource]
+script = ExtResource("1_ylhpq")
+entry_type = 1
+location = 4
+name = "Vest of Jungle"
+description = "Created from the strongest wood in jungles!"
+rarity = 4
+icon = ExtResource("1_44j7x")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

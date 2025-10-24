@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://bixou1aeoqcjl"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_662ea"]
+[ext_resource type="Texture2D" uid="uid://bi452vmwn2m6a" path="res://assets/Textures/UI/bestiary/meha_icon.png" id="1_rlkg8"]
+
+[resource]
+script = ExtResource("1_662ea")
+location = 6
+name = "Meha Monster"
+description = "Very strong monster with growing damage of attack"
+rarity = 4
+icon = ExtResource("1_rlkg8")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

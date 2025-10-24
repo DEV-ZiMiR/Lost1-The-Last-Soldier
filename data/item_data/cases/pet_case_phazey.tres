@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="CaseData" load_steps=14 format=3 uid="uid://ckb1jtur7yadv"]
+
+[ext_resource type="Script" uid="uid://k3ptpovh12s7" path="res://data/Helpers/CaseReward.gd" id="1_4otfl"]
+[ext_resource type="Texture2D" uid="uid://b2ctwdrtuy0bk" path="res://assets/Textures/Items/misc/boxes_SpriteSheet1.png" id="1_o41hl"]
+[ext_resource type="Script" uid="uid://bxl3xnfno4wfj" path="res://data/CaseData.gd" id="2_vm3y3"]
+[ext_resource type="Resource" uid="uid://d3kse11r6lywv" path="res://data/pet_data/pets/poisonous_frog.tres" id="3_xa7vx"]
+[ext_resource type="Resource" uid="uid://bm3nnhjgdcadc" path="res://data/pet_data/pets/calm_turtle.tres" id="4_drdtt"]
+[ext_resource type="Resource" uid="uid://c8yryvh5rrmji" path="res://data/pet_data/pets/op_crab.tres" id="5_p1guu"]
+[ext_resource type="Resource" uid="uid://c8hcwcldg4max" path="res://data/pet_data/pets/lilu.tres" id="6_fc0ih"]
+[ext_resource type="Resource" uid="uid://c8lyy4qermuqu" path="res://data/pet_data/pets/sweet.tres" id="7_jjowv"]
+
+[sub_resource type="Resource" id="Resource_6ymov"]
+script = ExtResource("1_4otfl")
+type = 1
+pet = ExtResource("3_xa7vx")
+chance = 60.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_aryef"]
+script = ExtResource("1_4otfl")
+type = 1
+pet = ExtResource("4_drdtt")
+chance = 30.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_xfkir"]
+script = ExtResource("1_4otfl")
+type = 1
+pet = ExtResource("5_p1guu")
+chance = 8.5
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_w0ahq"]
+script = ExtResource("1_4otfl")
+type = 1
+pet = ExtResource("6_fc0ih")
+chance = 1.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_jvg3y"]
+script = ExtResource("1_4otfl")
+type = 1
+pet = ExtResource("7_jjowv")
+chance = 0.5
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[resource]
+script = ExtResource("2_vm3y3")
+id = "case_pet_phazey"
+case_name = "Phazey Pet Case"
+icon = ExtResource("1_o41hl")
+rarity = 5
+price = 3500
+rewards = Array[ExtResource("1_4otfl")]([SubResource("Resource_6ymov"), SubResource("Resource_aryef"), SubResource("Resource_xfkir"), SubResource("Resource_w0ahq"), SubResource("Resource_jvg3y")])
+metadata/_custom_type_script = "uid://bxl3xnfno4wfj"

@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="EnemyDropData" load_steps=11 format=3 uid="uid://cf1grksn8ubvw"]
+
+[ext_resource type="Script" uid="uid://crluhw3owu5up" path="res://data/Drop/DropEntry.gd" id="1_1a56b"]
+[ext_resource type="Resource" uid="uid://cf40p6sju21h5" path="res://data/item_data/items/enemy_drop1.tres" id="2_1a56b"]
+[ext_resource type="Script" uid="uid://ctiqkmbxlobk6" path="res://data/Drop/EnemyDropData.gd" id="3_ao6fu"]
+[ext_resource type="Resource" uid="uid://dm71vtgd2617y" path="res://data/item_data/items/sword1.tres" id="3_esnh2"]
+[ext_resource type="Resource" uid="uid://bejwr5e706mdu" path="res://data/item_data/items/enemy_drop2.tres" id="4_prnhc"]
+[ext_resource type="Resource" uid="uid://c8fjomob886fq" path="res://data/item_data/items/enemy_drop3.tres" id="5_m02fb"]
+
+[sub_resource type="Resource" id="Resource_m02fb"]
+script = ExtResource("1_1a56b")
+item = ExtResource("2_1a56b")
+drop_chance = 90
+metadata/_custom_type_script = "uid://crluhw3owu5up"
+
+[sub_resource type="Resource" id="Resource_esnh2"]
+script = ExtResource("1_1a56b")
+item = ExtResource("3_esnh2")
+drop_chance = 8
+metadata/_custom_type_script = "uid://crluhw3owu5up"
+
+[sub_resource type="Resource" id="Resource_ao6fu"]
+script = ExtResource("1_1a56b")
+item = ExtResource("4_prnhc")
+drop_chance = 1
+metadata/_custom_type_script = "uid://crluhw3owu5up"
+
+[sub_resource type="Resource" id="Resource_3oi06"]
+script = ExtResource("1_1a56b")
+item = ExtResource("5_m02fb")
+drop_chance = 1
+metadata/_custom_type_script = "uid://crluhw3owu5up"
+
+[resource]
+script = ExtResource("3_ao6fu")
+drop_entries = Array[ExtResource("1_1a56b")]([SubResource("Resource_m02fb"), SubResource("Resource_esnh2"), SubResource("Resource_ao6fu"), SubResource("Resource_3oi06")])
+metadata/_custom_type_script = "uid://ctiqkmbxlobk6"

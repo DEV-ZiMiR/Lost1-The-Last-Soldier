@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://duqndlb44td7e"]
+
+[ext_resource type="Texture2D" uid="uid://cq546wsxyado7" path="res://assets/Textures/Characters/pets/Basic Sprites 2x1.png" id="1_0woec"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_eqfh6"]
+
+[resource]
+script = ExtResource("1_eqfh6")
+entry_type = 2
+location = 0
+name = "Chirpy Chick"
+description = "he worst pet in a game"
+icon = ExtResource("1_0woec")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

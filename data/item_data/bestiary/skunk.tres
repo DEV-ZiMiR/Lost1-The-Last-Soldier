@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://bq66i3nimkjji"]
+
+[ext_resource type="Texture2D" uid="uid://sfb5jlgi2oed" path="res://assets/Textures/Characters/pets/Basic Sprites 1x8.png" id="1_qgcdn"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_wbftc"]
+
+[resource]
+script = ExtResource("1_wbftc")
+entry_type = 2
+location = 0
+name = "Skunk"
+description = "Better tham most of pets, has good buffs"
+rarity = 3
+icon = ExtResource("1_qgcdn")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

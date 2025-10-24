@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://coxdmxn4fj8ui"]
+
+[ext_resource type="Texture2D" uid="uid://bn7pls44uwcun" path="res://assets/Textures/Characters/pets/Basic Sprites 1x9.png" id="1_3vgwf"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_nlu6u"]
+
+[resource]
+script = ExtResource("1_nlu6u")
+entry_type = 2
+location = 0
+name = "Porcupine"
+description = "Not bad at all, has pretty good buffs"
+rarity = 2
+icon = ExtResource("1_3vgwf")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

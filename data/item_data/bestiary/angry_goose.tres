@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://dgpa3lrs1tftp"]
+
+[ext_resource type="Texture2D" uid="uid://15o3ffkgy27j" path="res://assets/Textures/Characters/pets/Basic Sprites 2x3.png" id="1_ia0m3"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_y3igo"]
+
+[resource]
+script = ExtResource("1_y3igo")
+entry_type = 2
+location = 0
+name = "Angry Goose"
+description = "One of basic pets, nothing special"
+rarity = 1
+icon = ExtResource("1_ia0m3")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

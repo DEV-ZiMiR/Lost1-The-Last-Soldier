@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://c2k8llcobk8y4"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_j26e8"]
+[ext_resource type="Texture2D" uid="uid://dlwnahknvusgn" path="res://assets/Textures/Items/weapons/ranged/guns/GunsPack/Guns/Revolver.png" id="1_mbbcs"]
+
+[resource]
+script = ExtResource("1_j26e8")
+entry_type = 1
+location = 6
+name = "Revolver"
+description = "The classic pistol"
+rarity = 5
+icon = ExtResource("1_mbbcs")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

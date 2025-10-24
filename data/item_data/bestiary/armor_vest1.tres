@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://d2hjy6m6dxnmw"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_p1vsp"]
+[ext_resource type="Texture2D" uid="uid://de7mqjm2ap40k" path="res://assets/Textures/Items/armor/vests/armor_01a.png" id="1_xx0w0"]
+
+[resource]
+script = ExtResource("1_p1vsp")
+entry_type = 1
+location = 0
+name = "Used Vest"
+description = "Protects from attacks of enemys"
+icon = ExtResource("1_xx0w0")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

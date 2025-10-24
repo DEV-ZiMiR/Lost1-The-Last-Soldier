@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://dh7huep03iu35"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_ji82l"]
+[ext_resource type="Texture2D" uid="uid://csqkpnt15aupp" path="res://assets/Textures/UI/bestiary/trash_icon.png" id="1_v3c6f"]
+
+[resource]
+script = ExtResource("1_ji82l")
+location = 3
+name = "Trash Monster"
+description = "With each hit trash gets sharper, so attacks are getting more painfull!"
+rarity = 2
+icon = ExtResource("1_v3c6f")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

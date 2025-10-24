@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://chrya37ss6jan"]
+
+[ext_resource type="Texture2D" uid="uid://s4v00nyws28r" path="res://assets/Textures/Items/weapons/melee/swords/sword_03e.png" id="1_66m1o"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_xafnd"]
+
+[resource]
+script = ExtResource("1_xafnd")
+entry_type = 1
+location = 5
+name = "Knife of Pain"
+description = "The strongest knife in whole WORLD"
+rarity = 5
+icon = ExtResource("1_66m1o")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

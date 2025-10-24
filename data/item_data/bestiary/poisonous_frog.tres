@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://baexkt6etivyl"]
+
+[ext_resource type="Texture2D" uid="uid://bvg0lnk0yxg77" path="res://assets/Textures/Characters/pets/Basic Sprites 1x6.png" id="1_03b85"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_8g0u2"]
+
+[resource]
+script = ExtResource("1_8g0u2")
+entry_type = 2
+location = 0
+name = "Poisonous Frog"
+description = "Really good pet, has OP buffs"
+rarity = 4
+icon = ExtResource("1_03b85")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

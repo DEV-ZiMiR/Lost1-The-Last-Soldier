@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://ck2dotgwvy23y"]
+
+[ext_resource type="Texture2D" uid="uid://b4n7r3tcnyj5c" path="res://assets/Textures/Items/weapons/ranged/guns/GunsPack/Bullets/PistolAmmoBig.png" id="1_d2vy8"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_xyo0k"]
+
+[resource]
+script = ExtResource("1_xyo0k")
+entry_type = 1
+location = 6
+name = "Pistol Bullet"
+description = "You need it to shoot"
+rarity = 2
+icon = ExtResource("1_d2vy8")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

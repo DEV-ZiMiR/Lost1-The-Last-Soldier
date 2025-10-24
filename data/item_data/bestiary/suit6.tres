@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://bqqys8noe33jt"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_bij4m"]
+[ext_resource type="Texture2D" uid="uid://buslcfx42vew6" path="res://assets/Textures/Items/armor/suits/fb2072.png" id="1_sphgx"]
+
+[resource]
+script = ExtResource("1_bij4m")
+entry_type = 1
+location = 5
+name = "King Suit"
+description = "That suit was used by kings"
+rarity = 5
+icon = ExtResource("1_sphgx")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

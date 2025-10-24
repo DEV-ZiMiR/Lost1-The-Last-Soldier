@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://w7mwu1m0awi3"]
+
+[ext_resource type="Texture2D" uid="uid://bll4jfn73geh5" path="res://assets/Textures/Items/potions/potion_02a.png" id="1_17pyj"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_j2vp3"]
+
+[resource]
+script = ExtResource("1_j2vp3")
+entry_type = 1
+location = 2
+name = "Medium Potion"
+description = "Medium size, the best option for weak enemys!"
+rarity = 3
+icon = ExtResource("1_17pyj")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

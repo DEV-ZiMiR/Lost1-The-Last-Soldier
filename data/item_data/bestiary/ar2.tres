@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://srwanxg4dxcr"]
+
+[ext_resource type="Texture2D" uid="uid://cfycepvuf8krx" path="res://assets/Textures/Items/weapons/ranged/guns/GunsPack/Guns/M15.png" id="1_gdfik"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_ttiie"]
+
+[resource]
+script = ExtResource("1_ttiie")
+entry_type = 1
+location = 6
+name = "M15"
+description = "Used by USA millitary"
+rarity = 5
+icon = ExtResource("1_gdfik")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

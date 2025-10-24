@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://c5bavnna6j7en"]
+
+[ext_resource type="Texture2D" uid="uid://srvhtgvjremt" path="res://assets/Textures/Items/weapons/melee/swords/sword_02c.png" id="1_0w0sm"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_l41yx"]
+
+[resource]
+script = ExtResource("1_l41yx")
+entry_type = 1
+location = 1
+name = "Iron Sword"
+description = "Very strong weapon"
+rarity = 1
+icon = ExtResource("1_0w0sm")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://devww5tvdxnmx"]
+
+[ext_resource type="Texture2D" uid="uid://clymh4hp2q3so" path="res://assets/Textures/Items/weapons/melee/swords/sword_02d.png" id="1_u02c8"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_vdeiw"]
+
+[resource]
+script = ExtResource("1_vdeiw")
+entry_type = 1
+location = 2
+name = "Crystal Sword"
+description = "Powerful, strong, expensive..."
+rarity = 2
+icon = ExtResource("1_u02c8")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

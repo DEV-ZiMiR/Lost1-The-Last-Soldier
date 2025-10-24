@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://b1p0kcb7dmt06"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_kdoe4"]
+[ext_resource type="Texture2D" uid="uid://dct78kbbterol" path="res://assets/Textures/Items/armor/vests/armor_01c.png" id="1_llum3"]
+
+[resource]
+script = ExtResource("1_kdoe4")
+entry_type = 1
+location = 2
+name = "Millitary Vest"
+description = "Used by the military, very reliable"
+rarity = 2
+icon = ExtResource("1_llum3")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

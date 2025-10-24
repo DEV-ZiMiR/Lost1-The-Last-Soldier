@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://bph72lqk4sfmn"]
+
+[ext_resource type="Texture2D" uid="uid://dbtu3xxy1sovf" path="res://assets/Textures/UI/bestiary/armored_icon.png" id="1_18l7j"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_lldcw"]
+
+[resource]
+script = ExtResource("1_lldcw")
+location = 1
+name = "Armored Monster"
+description = "Really cripy creature with decent speed and damage"
+rarity = 1
+icon = ExtResource("1_18l7j")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

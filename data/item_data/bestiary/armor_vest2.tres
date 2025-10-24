@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://c17lk4oy0is5r"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_ht4b1"]
+[ext_resource type="Texture2D" uid="uid://b7d74xfdb8tgj" path="res://assets/Textures/Items/armor/vests/armor_01b.png" id="1_hyyrf"]
+
+[resource]
+script = ExtResource("1_ht4b1")
+entry_type = 1
+location = 1
+name = "Basic Vest"
+description = "Nothing special, just a brand new vest"
+rarity = 1
+icon = ExtResource("1_hyyrf")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

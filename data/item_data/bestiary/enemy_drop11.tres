@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://cxm56ath58ssl"]
+
+[ext_resource type="Texture2D" uid="uid://cc5nla2rsbyyb" path="res://assets/Textures/Items/materials/fb2132.png" id="1_e7e3v"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_kpaxu"]
+
+[resource]
+script = ExtResource("1_kpaxu")
+entry_type = 1
+location = 6
+name = "Strange Stone"
+description = "Nobody knows where it's from"
+rarity = 5
+icon = ExtResource("1_e7e3v")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

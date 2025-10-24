@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://cc7xn1xpqys53"]
+
+[ext_resource type="Texture2D" uid="uid://cujerd1naajqy" path="res://assets/Textures/Items/materials/fb332.png" id="1_sy504"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_yc3fc"]
+
+[resource]
+script = ExtResource("1_yc3fc")
+entry_type = 1
+location = 5
+name = "Demonic Stone"
+description = "..-.. .-. .. .-"
+rarity = 4
+icon = ExtResource("1_sy504")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

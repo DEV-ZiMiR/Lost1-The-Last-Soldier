@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://cwup3y1m4o78l"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_ems5r"]
+[ext_resource type="Texture2D" uid="uid://poftgnvmm3g6" path="res://assets/Textures/Items/armor/helmets/helmet_02d.png" id="1_yq1a1"]
+
+[resource]
+script = ExtResource("1_ems5r")
+entry_type = 1
+location = 3
+name = "Helmet of Heroes"
+description = "Everyone thought it was"
+rarity = 3
+icon = ExtResource("1_yq1a1")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

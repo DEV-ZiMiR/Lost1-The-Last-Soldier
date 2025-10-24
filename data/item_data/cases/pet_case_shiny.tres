@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="CaseData" load_steps=14 format=3 uid="uid://n3x5yyd1kg04"]
+
+[ext_resource type="Texture2D" uid="uid://b2ctwdrtuy0bk" path="res://assets/Textures/Items/misc/boxes_SpriteSheet1.png" id="1_hjich"]
+[ext_resource type="Script" uid="uid://k3ptpovh12s7" path="res://data/Helpers/CaseReward.gd" id="1_txmna"]
+[ext_resource type="Script" uid="uid://bxl3xnfno4wfj" path="res://data/CaseData.gd" id="2_vbljh"]
+[ext_resource type="Resource" uid="uid://48ftwaqmercu" path="res://data/pet_data/pets/chirpy_chick.tres" id="3_4dnwp"]
+[ext_resource type="Resource" uid="uid://bald88b6lkh8c" path="res://data/pet_data/pets/green_frog.tres" id="4_ynfer"]
+[ext_resource type="Resource" uid="uid://yswp7btpssgg" path="res://data/pet_data/pets/clucky_hen.tres" id="5_ht0py"]
+[ext_resource type="Resource" uid="uid://mtd2pb60ghwg" path="res://data/pet_data/pets/angry_goose.tres" id="6_3pdx5"]
+[ext_resource type="Resource" uid="uid://dfjnvx0hye0qs" path="res://data/pet_data/pets/cat.tres" id="7_cl13t"]
+
+[sub_resource type="Resource" id="Resource_h1567"]
+script = ExtResource("1_txmna")
+type = 1
+pet = ExtResource("3_4dnwp")
+chance = 40.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_o3utq"]
+script = ExtResource("1_txmna")
+type = 1
+pet = ExtResource("4_ynfer")
+chance = 20.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_ikbp8"]
+script = ExtResource("1_txmna")
+type = 1
+pet = ExtResource("5_ht0py")
+chance = 20.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_5sjjk"]
+script = ExtResource("1_txmna")
+type = 1
+pet = ExtResource("6_3pdx5")
+chance = 10.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[sub_resource type="Resource" id="Resource_dnlt4"]
+script = ExtResource("1_txmna")
+type = 1
+pet = ExtResource("7_cl13t")
+chance = 10.0
+metadata/_custom_type_script = "uid://k3ptpovh12s7"
+
+[resource]
+script = ExtResource("2_vbljh")
+id = "case_pet_shiny"
+case_name = "Shiny Pet Case"
+icon = ExtResource("1_hjich")
+rarity = 2
+price = 300
+rewards = Array[ExtResource("1_txmna")]([SubResource("Resource_h1567"), SubResource("Resource_o3utq"), SubResource("Resource_ikbp8"), SubResource("Resource_5sjjk"), SubResource("Resource_dnlt4")])
+metadata/_custom_type_script = "uid://bxl3xnfno4wfj"

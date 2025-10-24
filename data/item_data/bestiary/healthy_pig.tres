@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://cq4jiinvs2rai"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_skyuq"]
+[ext_resource type="Texture2D" uid="uid://bvyopg8mj0w8e" path="res://assets/Textures/Characters/pets/Basic Sprites 2x11.png" id="1_xfu4h"]
+
+[resource]
+script = ExtResource("1_skyuq")
+entry_type = 2
+location = 0
+name = "Healthy Pig"
+description = "Not bad at all, has pretty good buffs"
+rarity = 2
+icon = ExtResource("1_xfu4h")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

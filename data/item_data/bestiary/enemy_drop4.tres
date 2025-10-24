@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://bm2hqxrm527kh"]
+
+[ext_resource type="Texture2D" uid="uid://diddxikopr1ip" path="res://assets/Textures/Items/materials/ingot_01d.png" id="1_7mbwv"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_eunwx"]
+
+[resource]
+script = ExtResource("1_eunwx")
+entry_type = 1
+location = 2
+name = "Golden Ingot"
+description = "Gold always been very expensive"
+rarity = 2
+icon = ExtResource("1_7mbwv")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

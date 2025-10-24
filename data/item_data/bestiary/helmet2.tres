@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://cvr7i3mnajw3t"]
+
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_2bpvm"]
+[ext_resource type="Texture2D" uid="uid://ckp72gejpu5jy" path="res://assets/Textures/Items/armor/helmets/helmet_02b.png" id="1_bjp6i"]
+
+[resource]
+script = ExtResource("1_2bpvm")
+entry_type = 1
+location = 1
+name = "Bike Helmet"
+description = "Basic helmet, protects from some kind of hits"
+rarity = 1
+icon = ExtResource("1_bjp6i")
+metadata/_custom_type_script = "uid://ll26sau5rp25"

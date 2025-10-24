@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BestiaryEntryData" load_steps=3 format=3 uid="uid://dtln00lqwotd"]
+
+[ext_resource type="Texture2D" uid="uid://cyd07sx6v5xkb" path="res://assets/Textures/Items/weapons/ranged/guns/GunsPack/Guns/AK47.png" id="1_j1v2f"]
+[ext_resource type="Script" uid="uid://ll26sau5rp25" path="res://data/Helpers/BestiaryEntry.gd" id="1_rjrmy"]
+
+[resource]
+script = ExtResource("1_rjrmy")
+entry_type = 1
+location = 6
+name = "AK-47"
+description = "Really powerfull and easy to use"
+rarity = 5
+icon = ExtResource("1_j1v2f")
+metadata/_custom_type_script = "uid://ll26sau5rp25"
