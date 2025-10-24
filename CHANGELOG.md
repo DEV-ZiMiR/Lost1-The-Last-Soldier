@@ -82,3 +82,25 @@
   - minor inventory UI glitches
   - drop issues and rare enemy physics bugs
   - general stability fixes and performance improvements
+
+## [Alpha 0.7.1] - 2025-10-24
+
+- stackable item drops (items now drop in real stack amounts)
+- hotbar cleanup system (remove unwanted items directly)
+- improved day/night shaders (smoother transitions, better night visibility)
+- player & weapon rotation alignment (now both face shooting direction)
+- invisible map edge barriers (prevent falling off the world)
+- refined lighting and smoother visual transitions
+- cleaned UI visuals for pets, armor, and menus
+- improved inventory clarity and responsiveness
+- optimized hotbar logic and interaction flow
+- code cleanup for smoother performance and fewer input bugs
+
+fixed bugs:
+  - item use glitch after equipping
+  - bestiary exit issue and accidental usage inside menu
+  - day/night shader transition bug
+  - “Continue” button working without valid save
+  - rare issue where player turns black after death
+  - inconsistent enemy hitboxes and collisions
+  - minor UI and logic stability improvements
