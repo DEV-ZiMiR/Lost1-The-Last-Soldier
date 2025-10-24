@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmhbkwxxnrqbj"]
+
+[ext_resource type="Script" uid="uid://bpfl2s5io2ist" path="res://scripts/player/player_pet.gd" id="1_puq4d"]
+[ext_resource type="Texture2D" uid="uid://gyuk7v1fqaue" path="res://assets/Textures/Characters/pets/Basic Sprites 1x1.png" id="2_xefpe"]
+
+[node name="PlayerPet" type="Node2D"]
+z_index = 2
+script = ExtResource("1_puq4d")
+follow_distance = null
+follow_speed = null
+y_offset = null
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_xefpe")
+
+[node name="delay_timer" type="Timer" parent="."]
+wait_time = 0.5

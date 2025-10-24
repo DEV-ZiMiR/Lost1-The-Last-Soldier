@@ -1,0 +1,96 @@
+[gd_scene load_steps=7 format=3 uid="uid://bos4f7th6g4l4"]
+
+[ext_resource type="Texture2D" uid="uid://cg7qgw7msjwco" path="res://assets/Textures/UI/inventory/GUI12.png" id="1_jklxb"]
+[ext_resource type="Texture2D" uid="uid://7oqf7d327obo" path="res://assets/Textures/UI/common/GUI13.png" id="2_f50f0"]
+[ext_resource type="Script" uid="uid://tut3egmx05j3" path="res://scripts/ui/panel.gd" id="2_tbwn7"]
+[ext_resource type="FontFile" uid="uid://bt0civ2kekjrg" path="res://assets/Fonts/Ubuntu-Medium.ttf" id="3_tbwn7"]
+[ext_resource type="Texture2D" uid="uid://qy7rsowvb66" path="res://assets/Textures/UI/common/Chevron-Arrow-Down.png" id="4_l334g"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ifpka"]
+texture = ExtResource("1_jklxb")
+
+[node name="BestiaryUI" type="CanvasLayer"]
+layer = 15
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -365.0
+offset_top = -250.0
+offset_right = 365.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ifpka")
+script = ExtResource("2_tbwn7")
+
+[node name="CloseButton" type="TextureButton" parent="Panel/Panel"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -43.0
+offset_top = -19.0
+offset_right = 17.0
+offset_bottom = 41.0
+grow_horizontal = 0
+texture_normal = ExtResource("2_f50f0")
+texture_pressed = ExtResource("2_f50f0")
+texture_hover = ExtResource("2_f50f0")
+stretch_mode = 0
+
+[node name="Filters" type="HBoxContainer" parent="Panel/Panel"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -34.0
+offset_top = 25.0
+offset_right = 34.0
+offset_bottom = 65.0
+grow_horizontal = 2
+
+[node name="TypeFilter" type="OptionButton" parent="Panel/Panel/Filters"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_fonts/font = ExtResource("3_tbwn7")
+theme_override_font_sizes/font_size = 30
+theme_override_icons/arrow = ExtResource("4_l334g")
+
+[node name="LocationFilter" type="OptionButton" parent="Panel/Panel/Filters"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_fonts/font = ExtResource("3_tbwn7")
+theme_override_font_sizes/font_size = 30
+theme_override_icons/arrow = ExtResource("4_l334g")
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -274.0
+offset_top = -156.0
+offset_right = 274.0
+offset_bottom = 172.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EntriesContainer" type="GridContainer" parent="Panel/Panel/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 4

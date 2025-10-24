@@ -1,0 +1,122 @@
+[gd_scene load_steps=10 format=3 uid="uid://3hmqm0ty5j8b"]
+
+[ext_resource type="Texture2D" uid="uid://b5xla5u7yupee" path="res://assets/Textures/UI/inventory/GUI23.png" id="1_rv7r5"]
+[ext_resource type="Script" uid="uid://bmj3ytl7pvs30" path="res://scripts/ui/armor_context_menu.gd" id="2_g3lh5"]
+[ext_resource type="FontFile" uid="uid://y3dgscraj716" path="res://assets/Fonts/WDXLLubrifontTC-Regular.ttf" id="3_cqfcg"]
+[ext_resource type="FontFile" uid="uid://bt0civ2kekjrg" path="res://assets/Fonts/Ubuntu-Medium.ttf" id="4_a6tjy"]
+[ext_resource type="FontFile" uid="uid://1yhfjd0e0144" path="res://assets/Fonts/Ubuntu-BoldItalic.ttf" id="5_o5qlg"]
+[ext_resource type="Texture2D" uid="uid://bhwd24cofpu4o" path="res://assets/Textures/UI/common/GUI22.png" id="6_xiofg"]
+[ext_resource type="Texture2D" uid="uid://dcygnjkwr0t1d" path="res://assets/Textures/UI/common/GUI23png.png" id="7_3bywm"]
+[ext_resource type="Texture2D" uid="uid://cydia666tm23a" path="res://assets/Textures/UI/common/GUI24.png" id="8_sq6a6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ny5r7"]
+texture = ExtResource("1_rv7r5")
+
+[node name="ArmorContextMenu" type="Panel"]
+z_index = 1000
+z_as_relative = false
+custom_minimum_size = Vector2(150, 180)
+offset_right = 150.0
+offset_bottom = 180.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ny5r7")
+script = ExtResource("2_g3lh5")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+z_index = 100
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -84.0
+offset_right = 274.0
+offset_bottom = 399.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.282414, 0.347497)
+theme_override_constants/separation = 0
+
+[node name="ArmorNameLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_cqfcg")
+theme_override_font_sizes/font_size = 88
+text = "Cloth"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ItemRareLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_a6tjy")
+theme_override_font_sizes/font_size = 32
+text = "common"
+horizontal_alignment = 1
+
+[node name="ItemArmorBonusLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("5_o5qlg")
+theme_override_font_sizes/font_size = 44
+text = "Armor bonus: 
+"
+horizontal_alignment = 1
+
+[node name="ItemPriceLabel" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 40.435)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.854902, 0.721569, 0.235294, 1)
+theme_override_fonts/font = ExtResource("5_o5qlg")
+theme_override_font_sizes/font_size = 48
+text = "Price: 0"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="UnequipButton" type="TextureButton" parent="VBoxContainer"]
+z_index = 30
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+size_flags_vertical = 6
+texture_normal = ExtResource("6_xiofg")
+texture_pressed = ExtResource("7_3bywm")
+texture_hover = ExtResource("8_sq6a6")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/UnequipButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -0.790631
+offset_bottom = -0.790632
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_cqfcg")
+theme_override_font_sizes/font_size = 48
+text = "Unequip"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DropButton" type="TextureButton" parent="VBoxContainer"]
+z_index = 30
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+size_flags_vertical = 2
+texture_normal = ExtResource("6_xiofg")
+texture_pressed = ExtResource("7_3bywm")
+texture_hover = ExtResource("8_sq6a6")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/DropButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_cqfcg")
+theme_override_font_sizes/font_size = 48
+text = "Drop"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,133 @@
+[gd_scene load_steps=10 format=3 uid="uid://cl7brey7aok2"]
+
+[ext_resource type="Script" uid="uid://bln4pm12y3v64" path="res://scripts/shop/shop_ui.gd" id="1_fs6yy"]
+[ext_resource type="Texture2D" uid="uid://cg7qgw7msjwco" path="res://assets/Textures/UI/inventory/GUI12.png" id="2_usj2y"]
+[ext_resource type="Texture2D" uid="uid://bhwd24cofpu4o" path="res://assets/Textures/UI/common/GUI22.png" id="3_bidp2"]
+[ext_resource type="Texture2D" uid="uid://dcygnjkwr0t1d" path="res://assets/Textures/UI/common/GUI23png.png" id="4_obwu6"]
+[ext_resource type="Texture2D" uid="uid://cydia666tm23a" path="res://assets/Textures/UI/common/GUI24.png" id="5_t3xdf"]
+[ext_resource type="Texture2D" uid="uid://7oqf7d327obo" path="res://assets/Textures/UI/common/GUI13.png" id="6_0yw5g"]
+[ext_resource type="FontFile" uid="uid://y3dgscraj716" path="res://assets/Fonts/WDXLLubrifontTC-Regular.ttf" id="6_bidp2"]
+[ext_resource type="FontFile" uid="uid://1yhfjd0e0144" path="res://assets/Fonts/Ubuntu-BoldItalic.ttf" id="6_obwu6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s287r"]
+texture = ExtResource("2_usj2y")
+
+[node name="ShopUI" type="CanvasLayer"]
+layer = 15
+visible = false
+script = ExtResource("1_fs6yy")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Panel"]
+custom_minimum_size = Vector2(600, 500)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_s287r")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 74.0
+offset_right = -74.0
+offset_bottom = -76.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 92)
+layout_mode = 2
+
+[node name="BuyButton" type="TextureButton" parent="Panel/Panel/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture_normal = ExtResource("3_bidp2")
+texture_pressed = ExtResource("4_obwu6")
+texture_hover = ExtResource("5_t3xdf")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel/VBoxContainer/HBoxContainer/BuyButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_obwu6")
+theme_override_font_sizes/font_size = 30
+text = "Buy"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Panel/Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_bidp2")
+theme_override_font_sizes/font_size = 60
+text = "Shop"
+
+[node name="SellButton" type="TextureButton" parent="Panel/Panel/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture_normal = ExtResource("3_bidp2")
+texture_pressed = ExtResource("4_obwu6")
+texture_hover = ExtResource("5_t3xdf")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel/VBoxContainer/HBoxContainer/SellButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_obwu6")
+theme_override_font_sizes/font_size = 30
+text = "Sell"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 330)
+layout_mode = 2
+
+[node name="ItemGrid" type="GridContainer" parent="Panel/Panel/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+
+[node name="CloseButton" type="TextureButton" parent="Panel/Panel"]
+z_index = 10
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -26.0
+offset_top = -27.0
+offset_right = 24.0
+offset_bottom = 23.0
+grow_horizontal = 0
+action_mode = 0
+texture_normal = ExtResource("6_0yw5g")
+texture_pressed = ExtResource("6_0yw5g")
+texture_hover = ExtResource("6_0yw5g")
+stretch_mode = 0

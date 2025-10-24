@@ -1,0 +1,439 @@
+[gd_scene load_steps=22 format=3 uid="uid://vyeqjxgb2utt"]
+
+[ext_resource type="FontFile" uid="uid://y3dgscraj716" path="res://assets/Fonts/WDXLLubrifontTC-Regular.ttf" id="1_1dxi5"]
+[ext_resource type="Texture2D" uid="uid://ehkryrl7hhx3" path="res://assets/Textures/UI/pause_menu/GUI26.png" id="1_ngbl7"]
+[ext_resource type="Texture2D" uid="uid://d3k11gabliiy2" path="res://assets/Textures/UI/inventory/character_inventoryui.png" id="2_8wyaw"]
+[ext_resource type="Texture2D" uid="uid://bhwd24cofpu4o" path="res://assets/Textures/UI/common/GUI22.png" id="2_dqfnd"]
+[ext_resource type="PackedScene" uid="uid://bjxmfdfp4kgtf" path="res://scenes/player/ui/inventory_slot.tscn" id="2_eifbp"]
+[ext_resource type="FontFile" uid="uid://1yhfjd0e0144" path="res://assets/Fonts/Ubuntu-BoldItalic.ttf" id="2_iradw"]
+[ext_resource type="Texture2D" uid="uid://cg7qgw7msjwco" path="res://assets/Textures/UI/inventory/GUI12.png" id="2_mdwe3"]
+[ext_resource type="PackedScene" uid="uid://bt1dps7vv08rj" path="res://scenes/player/ui/armor_slot_ui.tscn" id="3_cwdri"]
+[ext_resource type="Texture2D" uid="uid://7oqf7d327obo" path="res://assets/Textures/UI/common/GUI13.png" id="3_eifbp"]
+[ext_resource type="Texture2D" uid="uid://dcygnjkwr0t1d" path="res://assets/Textures/UI/common/GUI23png.png" id="3_ngbl7"]
+[ext_resource type="Texture2D" uid="uid://cydia666tm23a" path="res://assets/Textures/UI/common/GUI24.png" id="4_8wyaw"]
+[ext_resource type="Script" uid="uid://ceg2b811545ti" path="res://scripts/ui/button.gd" id="4_eifbp"]
+[ext_resource type="FontFile" uid="uid://bt0civ2kekjrg" path="res://assets/Fonts/Ubuntu-Medium.ttf" id="5_dqfnd"]
+[ext_resource type="Texture2D" uid="uid://cyxkkyemf4i26" path="res://assets/Textures/UI/inventory/GUI7.png" id="13_c5hja"]
+[ext_resource type="Script" uid="uid://ccg74sjc1hq3v" path="res://scenes/player/ui/pet_inventory.gd" id="14_8o1eo"]
+[ext_resource type="PackedScene" uid="uid://c7glidyrmsw4t" path="res://scenes/player/ui/pet_slot.tscn" id="15_volit"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8wyaw"]
+texture = ExtResource("1_ngbl7")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2lmnb"]
+texture = ExtResource("3_eifbp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eifbp"]
+texture = ExtResource("3_eifbp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iradw"]
+texture = ExtResource("3_eifbp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8o1eo"]
+texture = ExtResource("13_c5hja")
+
+[node name="InventoryUI" type="Control"]
+z_index = 30
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_right = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="ArmorPanel" type="Panel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.265
+anchor_top = 0.5
+anchor_right = 0.265
+anchor_bottom = 0.5
+offset_left = -255.28
+offset_top = -235.0
+offset_right = 74.72
+offset_bottom = 235.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_8wyaw")
+
+[node name="TextureRect" type="TextureRect" parent="Panel/ArmorPanel"]
+custom_minimum_size = Vector2(290, 450)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -148.0
+offset_top = -194.0
+offset_right = 1342.0
+offset_bottom = 4656.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.200001, 0.0800001)
+texture = ExtResource("2_8wyaw")
+
+[node name="ArmorSlotHelmet" parent="Panel/ArmorPanel" instance=ExtResource("3_cwdri")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.358
+anchor_top = 0.145
+anchor_right = 0.358
+anchor_bottom = 0.145
+offset_left = -33.14
+offset_top = -33.15
+offset_right = 33.36
+offset_bottom = 33.35
+slot_type = 1
+
+[node name="Label" type="Label" parent="Panel/ArmorPanel/ArmorSlotHelmet"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.045
+anchor_right = 0.5
+anchor_bottom = 1.045
+offset_left = -33.25
+offset_top = -7.49251
+offset_right = 14691.8
+offset_bottom = 3995.51
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.00455013, 0.00374737)
+theme_override_fonts/font = ExtResource("2_iradw")
+theme_override_font_sizes/font_size = 3500
+text = "Helmet"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ArmorSlotSuit" parent="Panel/ArmorPanel" instance=ExtResource("3_cwdri")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.216
+anchor_top = 0.528
+anchor_right = 0.216
+anchor_bottom = 0.528
+offset_left = -33.28
+offset_top = -33.16
+offset_right = 33.22
+offset_bottom = 33.34
+slot_type = 2
+
+[node name="Label" type="Label" parent="Panel/ArmorPanel/ArmorSlotSuit"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.496
+anchor_top = 1.043
+anchor_right = 0.496
+anchor_bottom = 1.043
+offset_left = -32.984
+offset_top = -7.3595
+offset_right = 14472.0
+offset_bottom = 3916.64
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.00455013, 0.00374737)
+theme_override_fonts/font = ExtResource("2_iradw")
+theme_override_font_sizes/font_size = 3500
+text = "Suit"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ArmorSlotVest" parent="Panel/ArmorPanel" instance=ExtResource("3_cwdri")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.617
+anchor_top = 0.452
+anchor_right = 0.617
+anchor_bottom = 0.452
+offset_left = -33.61
+offset_top = -33.44
+offset_right = 33.39
+offset_bottom = 33.56
+slot_type = 3
+
+[node name="Label" type="Label" parent="Panel/ArmorPanel/ArmorSlotVest"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.035
+anchor_right = 0.5
+anchor_bottom = 1.035
+offset_left = -33.5
+offset_top = -7.34501
+offset_right = 14691.5
+offset_bottom = 3916.66
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.00455013, 0.00374737)
+theme_override_fonts/font = ExtResource("2_iradw")
+theme_override_font_sizes/font_size = 3500
+text = "Vest"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.613
+anchor_top = 0.453
+anchor_right = 0.613
+anchor_bottom = 0.453
+offset_left = -269.176
+offset_top = -219.544
+offset_right = 79.824
+offset_bottom = 219.456
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SortBar" type="HBoxContainer" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 85)
+layout_mode = 2
+
+[node name="SortLabel" type="Label" parent="Panel/VBoxContainer/SortBar"]
+z_index = 20
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_1dxi5")
+theme_override_font_sizes/font_size = 30
+text = "Sort:"
+
+[node name="SortByPriceAsc" type="TextureButton" parent="Panel/VBoxContainer/SortBar"]
+z_index = 20
+custom_minimum_size = Vector2(65, 35)
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+texture_normal = ExtResource("2_dqfnd")
+texture_pressed = ExtResource("3_ngbl7")
+texture_hover = ExtResource("4_8wyaw")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/SortBar/SortByPriceAsc"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_dqfnd")
+theme_override_font_sizes/font_size = 16
+text = "↑ Price"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SortByPriceDesc" type="TextureButton" parent="Panel/VBoxContainer/SortBar"]
+z_index = 20
+custom_minimum_size = Vector2(65, 35)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture_normal = ExtResource("2_dqfnd")
+texture_pressed = ExtResource("3_ngbl7")
+texture_hover = ExtResource("4_8wyaw")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/SortBar/SortByPriceDesc"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_dqfnd")
+theme_override_font_sizes/font_size = 16
+text = "↓ Price"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SortByType" type="TextureButton" parent="Panel/VBoxContainer/SortBar"]
+z_index = 20
+custom_minimum_size = Vector2(65, 35)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+texture_normal = ExtResource("2_dqfnd")
+texture_pressed = ExtResource("3_ngbl7")
+texture_hover = ExtResource("4_8wyaw")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/SortBar/SortByType"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_dqfnd")
+theme_override_font_sizes/font_size = 16
+text = "Type"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InventoryGrid" type="GridContainer" parent="Panel/VBoxContainer"]
+z_index = -1
+custom_minimum_size = Vector2(349, 330)
+layout_mode = 2
+size_flags_vertical = 3
+columns = 5
+
+[node name="Slot0" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot1" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot2" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot3" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot4" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot5" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot6" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot7" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot8" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot9" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot10" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot11" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot12" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot13" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot14" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot15" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot16" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot17" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot18" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot19" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot20" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot21" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot22" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot23" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Slot24" parent="Panel/VBoxContainer/InventoryGrid" instance=ExtResource("2_eifbp")]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Panel"]
+z_index = 1
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -341.0
+offset_top = 49.0
+offset_right = -287.0
+offset_bottom = 101.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("2_iradw")
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxTexture_2lmnb")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_eifbp")
+theme_override_styles/hover = SubResource("StyleBoxTexture_iradw")
+script = ExtResource("4_eifbp")
+
+[node name="PetPanel" type="Panel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.852
+anchor_top = 0.552
+anchor_right = 0.852
+anchor_bottom = 0.552
+offset_left = -147.504
+offset_top = -221.696
+offset_right = 161.496
+offset_bottom = 204.304
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_8o1eo")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/PetPanel"]
+custom_minimum_size = Vector2(250, 345)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/PetPanel/ScrollContainer"]
+custom_minimum_size = Vector2(250, 345)
+layout_mode = 2
+script = ExtResource("14_8o1eo")
+slot_scene = ExtResource("15_volit")
+
+[node name="GridContainer" type="GridContainer" parent="Panel/PetPanel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(460, 500)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.61
+anchor_top = 0.498
+anchor_right = 0.61
+anchor_bottom = 0.498
+offset_left = -322.72
+offset_top = -249.704
+offset_right = 137.28
+offset_bottom = 250.296
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_mdwe3")
+
+[connection signal="pressed" from="Panel/Button" to="Panel/VBoxContainer/InventoryGrid/Slot0" method="_on_button_pressed"]

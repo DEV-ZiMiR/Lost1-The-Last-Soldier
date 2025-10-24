@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfwv1x2wklvhb"]
+
+[ext_resource type="Script" uid="uid://dnttukljprpu6" path="res://scripts/items/ranged_weapon.gd" id="1_2oukt"]
+[ext_resource type="Texture2D" uid="uid://c1y2by77sx40g" path="res://assets/Textures/Items/weapons/ranged/guns/GunsPack/Guns/M92.png" id="2_nbixp"]
+
+[node name="ranged_weapon" type="Node2D"]
+script = ExtResource("1_2oukt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_nbixp")

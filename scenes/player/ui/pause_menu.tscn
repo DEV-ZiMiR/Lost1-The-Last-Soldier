@@ -1,0 +1,576 @@
+[gd_scene load_steps=19 format=3 uid="uid://cq36a2woqc85w"]
+
+[ext_resource type="Script" uid="uid://lu4102e1ip02" path="res://scripts/ui/pause_menu.gd" id="1_1s2dm"]
+[ext_resource type="Texture2D" uid="uid://cyxkkyemf4i26" path="res://assets/Textures/UI/inventory/GUI7.png" id="2_88e76"]
+[ext_resource type="PackedScene" uid="uid://dqx5ixhah6lwr" path="res://scenes/world/settings_ui.tscn" id="2_nkf34"]
+[ext_resource type="PackedScene" uid="uid://c0w5wnx2wqnqc" path="res://scenes/player/ui/info_ui.tscn" id="3_dkhtf"]
+[ext_resource type="FontFile" uid="uid://y3dgscraj716" path="res://assets/Fonts/WDXLLubrifontTC-Regular.ttf" id="3_knqa7"]
+[ext_resource type="Texture2D" uid="uid://bhwd24cofpu4o" path="res://assets/Textures/UI/common/GUI22.png" id="4_71k7c"]
+[ext_resource type="Texture2D" uid="uid://dcygnjkwr0t1d" path="res://assets/Textures/UI/common/GUI23png.png" id="5_cmnsq"]
+[ext_resource type="Texture2D" uid="uid://cydia666tm23a" path="res://assets/Textures/UI/common/GUI24.png" id="6_ofnjo"]
+[ext_resource type="FontFile" uid="uid://1yhfjd0e0144" path="res://assets/Fonts/Ubuntu-BoldItalic.ttf" id="7_1rgno"]
+[ext_resource type="Texture2D" uid="uid://c83uo6skcukcg" path="res://assets/Textures/UI/common/GUI16.png" id="8_3aky7"]
+[ext_resource type="Texture2D" uid="uid://d4n2bwk0umh8y" path="res://assets/Textures/UI/common/GUI18.png" id="9_kunb1"]
+[ext_resource type="Texture2D" uid="uid://dl02pt6ke8e42" path="res://assets/Textures/UI/common/GUI17.png" id="10_scklr"]
+[ext_resource type="Texture2D" uid="uid://588dqpqwwms" path="res://assets/Textures/UI/common/Floppy-Drive.png" id="11_ua2bl"]
+[ext_resource type="Texture2D" uid="uid://dm0b1fotdnbtt" path="res://assets/Textures/UI/common/Upload.png" id="12_nkf34"]
+[ext_resource type="Texture2D" uid="uid://cxjuc66y4d53r" path="res://assets/Textures/UI/common/Info.png" id="13_2fgw3"]
+[ext_resource type="Texture2D" uid="uid://b5xla5u7yupee" path="res://assets/Textures/UI/inventory/GUI23.png" id="15_2fgw3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s20a4"]
+texture = ExtResource("2_88e76")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dkhtf"]
+texture = ExtResource("15_2fgw3")
+
+[node name="PauseMenu" type="CanvasLayer"]
+process_mode = 3
+layer = 15
+script = ExtResource("1_1s2dm")
+settings_scene = ExtResource("2_nkf34")
+info_ui = ExtResource("3_dkhtf")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="Panel"]
+custom_minimum_size = Vector2(420, 550)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxTexture_s20a4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/Panel"]
+custom_minimum_size = Vector2(220, 320)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -133.0
+offset_top = -186.0
+offset_right = 133.0
+offset_bottom = 186.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+
+[node name="PauseText" type="Label" parent="Panel/Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_knqa7")
+theme_override_font_sizes/font_size = 61
+text = "PAUSE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResumeButton" type="TextureButton" parent="Panel/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+texture_normal = ExtResource("4_71k7c")
+texture_pressed = ExtResource("5_cmnsq")
+texture_hover = ExtResource("6_ofnjo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel/VBoxContainer/ResumeButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("7_1rgno")
+theme_override_font_sizes/font_size = 38
+text = "Resume"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="SaveButton" type="TextureButton" parent="Panel/Panel/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(68, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+texture_normal = ExtResource("8_3aky7")
+texture_pressed = ExtResource("9_kunb1")
+texture_hover = ExtResource("10_scklr")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="Panel/Panel/VBoxContainer/HBoxContainer/SaveButton"]
+custom_minimum_size = Vector2(34, 34)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -14.0
+offset_top = -14.0
+offset_right = 14.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_ua2bl")
+
+[node name="LoadButton" type="TextureButton" parent="Panel/Panel/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(68, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+texture_normal = ExtResource("8_3aky7")
+texture_pressed = ExtResource("9_kunb1")
+texture_hover = ExtResource("10_scklr")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="Panel/Panel/VBoxContainer/HBoxContainer/LoadButton"]
+custom_minimum_size = Vector2(34, 34)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_nkf34")
+
+[node name="InfoButton" type="TextureButton" parent="Panel/Panel/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(68, 68)
+layout_mode = 2
+size_flags_horizontal = 6
+texture_normal = ExtResource("8_3aky7")
+texture_pressed = ExtResource("9_kunb1")
+texture_hover = ExtResource("10_scklr")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="Panel/Panel/VBoxContainer/HBoxContainer/InfoButton"]
+custom_minimum_size = Vector2(22, 34)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_2fgw3")
+
+[node name="SettingsButton" type="TextureButton" parent="Panel/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+texture_normal = ExtResource("4_71k7c")
+texture_pressed = ExtResource("5_cmnsq")
+texture_hover = ExtResource("6_ofnjo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel/VBoxContainer/SettingsButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("7_1rgno")
+theme_override_font_sizes/font_size = 38
+text = "Settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ExitButton" type="TextureButton" parent="Panel/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+texture_normal = ExtResource("4_71k7c")
+texture_pressed = ExtResource("5_cmnsq")
+texture_hover = ExtResource("6_ofnjo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel/VBoxContainer/ExitButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("7_1rgno")
+theme_override_font_sizes/font_size = 38
+text = "Exit"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="Panel"]
+custom_minimum_size = Vector2(420, 340)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_dkhtf")
+
+[node name="Label" type="Label" parent="Panel/Panel2"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_knqa7")
+theme_override_font_sizes/font_size = 36
+text = "CHOOSE SAVE SLOT"
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/Panel2"]
+custom_minimum_size = Vector2(250, 240)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.294
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -147.0
+offset_top = -29.96
+offset_right = 147.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Slot1" type="TextureButton" parent="Panel/Panel2/VBoxContainer"]
+custom_minimum_size = Vector2(140, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("4_71k7c")
+texture_pressed = ExtResource("5_cmnsq")
+texture_hover = ExtResource("6_ofnjo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel2/VBoxContainer/Slot1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_1rgno")
+theme_override_font_sizes/font_size = 32
+text = "Slot 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot2" type="TextureButton" parent="Panel/Panel2/VBoxContainer"]
+custom_minimum_size = Vector2(140, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("4_71k7c")
+texture_pressed = ExtResource("5_cmnsq")
+texture_hover = ExtResource("6_ofnjo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel2/VBoxContainer/Slot2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_1rgno")
+theme_override_font_sizes/font_size = 32
+text = "Slot 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot3" type="TextureButton" parent="Panel/Panel2/VBoxContainer"]
+custom_minimum_size = Vector2(140, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("4_71k7c")
+texture_pressed = ExtResource("5_cmnsq")
+texture_hover = ExtResource("6_ofnjo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel2/VBoxContainer/Slot3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_1rgno")
+theme_override_font_sizes/font_size = 32
+text = "Slot 3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/Panel2/VBoxContainer"]
+layout_mode = 2
+
+[node name="CancelButton" type="TextureButton" parent="Panel/Panel2/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(145, 55)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("4_71k7c")
+texture_pressed = ExtResource("5_cmnsq")
+texture_hover = ExtResource("6_ofnjo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel2/VBoxContainer/HBoxContainer/CancelButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_1rgno")
+theme_override_font_sizes/font_size = 32
+text = "Cancel"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SaveInSlotButton" type="TextureButton" parent="Panel/Panel2/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(145, 55)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("4_71k7c")
+texture_pressed = ExtResource("5_cmnsq")
+texture_hover = ExtResource("6_ofnjo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel2/VBoxContainer/HBoxContainer/SaveInSlotButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_1rgno")
+theme_override_font_sizes/font_size = 32
+text = "Save"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel3" type="Panel" parent="Panel"]
+visible = false
+custom_minimum_size = Vector2(420, 340)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_dkhtf")
+
+[node name="Label" type="Label" parent="Panel/Panel3"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_knqa7")
+theme_override_font_sizes/font_size = 36
+text = "CHOOSE SAVE SLOT"
+vertical_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/Panel3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -154.0
+offset_top = -110.0
+offset_right = 153.0
+offset_bottom = 49.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/Panel3/ScrollContainer"]
+custom_minimum_size = Vector2(300, 240)
+layout_mode = 2
+alignment = 2
+
+[node name="Slot1" type="TextureButton" parent="Panel/Panel3/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(140, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("4_71k7c")
+texture_pressed = ExtResource("5_cmnsq")
+texture_hover = ExtResource("6_ofnjo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel3/ScrollContainer/VBoxContainer/Slot1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_1rgno")
+theme_override_font_sizes/font_size = 32
+text = "Slot 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot2" type="TextureButton" parent="Panel/Panel3/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(140, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("4_71k7c")
+texture_pressed = ExtResource("5_cmnsq")
+texture_hover = ExtResource("6_ofnjo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel3/ScrollContainer/VBoxContainer/Slot2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_1rgno")
+theme_override_font_sizes/font_size = 32
+text = "Slot 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot3" type="TextureButton" parent="Panel/Panel3/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(140, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("4_71k7c")
+texture_pressed = ExtResource("5_cmnsq")
+texture_hover = ExtResource("6_ofnjo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel3/ScrollContainer/VBoxContainer/Slot3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_1rgno")
+theme_override_font_sizes/font_size = 32
+text = "Slot 3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot4" type="TextureButton" parent="Panel/Panel3/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(140, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("4_71k7c")
+texture_pressed = ExtResource("5_cmnsq")
+texture_hover = ExtResource("6_ofnjo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel3/ScrollContainer/VBoxContainer/Slot4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_1rgno")
+theme_override_font_sizes/font_size = 28
+text = "Autosave"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/Panel3"]
+layout_mode = 2
+offset_left = 64.0
+offset_top = 239.0
+offset_right = 358.0
+offset_bottom = 294.0
+
+[node name="CancelButton" type="TextureButton" parent="Panel/Panel3/HBoxContainer"]
+custom_minimum_size = Vector2(145, 55)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("4_71k7c")
+texture_pressed = ExtResource("5_cmnsq")
+texture_hover = ExtResource("6_ofnjo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel3/HBoxContainer/CancelButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_1rgno")
+theme_override_font_sizes/font_size = 32
+text = "Cancel"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LoadFromSlotButton" type="TextureButton" parent="Panel/Panel3/HBoxContainer"]
+custom_minimum_size = Vector2(145, 55)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("4_71k7c")
+texture_pressed = ExtResource("5_cmnsq")
+texture_hover = ExtResource("6_ofnjo")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/Panel3/HBoxContainer/LoadFromSlotButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_1rgno")
+theme_override_font_sizes/font_size = 32
+text = "Load"
+horizontal_alignment = 1
+vertical_alignment = 1

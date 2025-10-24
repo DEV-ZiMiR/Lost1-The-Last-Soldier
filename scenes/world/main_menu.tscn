@@ -1,0 +1,188 @@
+[gd_scene load_steps=8 format=3 uid="uid://d37g7jcv2pwfe"]
+
+[ext_resource type="Texture2D" uid="uid://bl13c3oa0y0pl" path="res://assets/Textures/Maps/backgrounds/Image.png" id="1_bh0oe"]
+[ext_resource type="Script" uid="uid://bjo5jskn14jab" path="res://scripts/world/main_menu.gd" id="1_pvxs2"]
+[ext_resource type="FontFile" uid="uid://bt0civ2kekjrg" path="res://assets/Fonts/Ubuntu-Medium.ttf" id="2_vwidw"]
+[ext_resource type="Texture2D" uid="uid://daiyltugr4bg1" path="res://assets/Textures/UI/common/GUI6.png" id="3_vjeyx"]
+[ext_resource type="Texture2D" uid="uid://bhgcbmrbqrsvv" path="res://assets/Textures/UI/common/GUI4.png" id="4_8huic"]
+[ext_resource type="Texture2D" uid="uid://nac8k8pp2ff5" path="res://assets/Textures/UI/common/GUI5.png" id="5_pvxs2"]
+[ext_resource type="FontFile" uid="uid://1yhfjd0e0144" path="res://assets/Fonts/Ubuntu-BoldItalic.ttf" id="6_8huic"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pvxs2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_bh0oe")
+
+[node name="AudioPlayer" type="AudioStreamPlayer" parent="."]
+autoplay = true
+mix_target = 1
+
+[node name="Label2" type="Label" parent="."]
+z_index = 1
+layout_mode = 2
+offset_left = 863.0
+offset_top = 36.0
+offset_right = 1001.0
+offset_bottom = 59.0
+rotation = 0.675442
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("2_vwidw")
+theme_override_font_sizes/font_size = 20
+text = "Слава Україні!"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -325.0
+offset_top = -300.0
+offset_right = 325.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("2_vwidw")
+theme_override_font_sizes/font_size = 62
+text = "Lost I: The Last Soldier"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContinueButton" type="TextureButton" parent="VBoxContainer"]
+custom_minimum_size = Vector2(240, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("3_vjeyx")
+texture_pressed = ExtResource("4_8huic")
+texture_hover = ExtResource("5_pvxs2")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/ContinueButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_8huic")
+theme_override_font_sizes/font_size = 36
+text = "Continue"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NewGameButton" type="TextureButton" parent="VBoxContainer"]
+custom_minimum_size = Vector2(240, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("3_vjeyx")
+texture_pressed = ExtResource("4_8huic")
+texture_hover = ExtResource("5_pvxs2")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/NewGameButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_8huic")
+theme_override_font_sizes/font_size = 32
+text = "New game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LoadGameButton" type="TextureButton" parent="VBoxContainer"]
+custom_minimum_size = Vector2(240, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("3_vjeyx")
+texture_pressed = ExtResource("4_8huic")
+texture_hover = ExtResource("5_pvxs2")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/LoadGameButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_8huic")
+theme_override_font_sizes/font_size = 32
+text = "Load game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SettingsButton" type="TextureButton" parent="VBoxContainer"]
+custom_minimum_size = Vector2(240, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("3_vjeyx")
+texture_pressed = ExtResource("4_8huic")
+texture_hover = ExtResource("5_pvxs2")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/SettingsButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_8huic")
+theme_override_font_sizes/font_size = 32
+text = "Settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuitButton" type="TextureButton" parent="VBoxContainer"]
+custom_minimum_size = Vector2(240, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("3_vjeyx")
+texture_pressed = ExtResource("4_8huic")
+texture_hover = ExtResource("5_pvxs2")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/QuitButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_8huic")
+theme_override_font_sizes/font_size = 32
+text = "Quit"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LoadGamePopup" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

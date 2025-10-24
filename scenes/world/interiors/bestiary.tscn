@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkpg3qiswvdtr"]
+
+[ext_resource type="Script" uid="uid://dr7seho3fbvhm" path="res://scripts/world/bestiary.gd" id="1_l1vai"]
+[ext_resource type="Texture2D" uid="uid://uq7gb336xnvq" path="res://assets/Textures/Maps/decorations/Bookshelf.png" id="2_y3r8e"]
+[ext_resource type="FontFile" uid="uid://y3dgscraj716" path="res://assets/Fonts/WDXLLubrifontTC-Regular.ttf" id="3_q1psj"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q1psj"]
+radius = 33.0
+height = 134.0
+
+[node name="Bestiary" type="Area2D"]
+z_index = 5
+script = ExtResource("1_l1vai")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_q1psj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_y3r8e")
+
+[node name="InteractionLabel" type="Label" parent="."]
+offset_left = -16.0
+offset_top = -8.0
+offset_right = 467.0
+offset_bottom = 233.0
+scale = Vector2(0.07, 0.07)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_q1psj")
+theme_override_font_sizes/font_size = 100
+text = "press \"E\" to 
+open bestiary"

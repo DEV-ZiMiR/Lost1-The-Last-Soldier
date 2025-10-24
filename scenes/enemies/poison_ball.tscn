@@ -1,0 +1,100 @@
+[gd_scene load_steps=15 format=3 uid="uid://brf4j87p5j540"]
+
+[ext_resource type="Script" uid="uid://jq0m5705o25h" path="res://scripts/enemies/poison_ball.gd" id="1_wxhjm"]
+[ext_resource type="Texture2D" uid="uid://ba7x7rd4gx2yk" path="res://assets/Textures/Effects/Green Effect and Bullet 16x16.png" id="2_p30lw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uupg5"]
+atlas = ExtResource("2_p30lw")
+region = Rect2(384, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wxhjm"]
+atlas = ExtResource("2_p30lw")
+region = Rect2(400, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n1qja"]
+atlas = ExtResource("2_p30lw")
+region = Rect2(416, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_524dr"]
+atlas = ExtResource("2_p30lw")
+region = Rect2(432, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u8f5h"]
+atlas = ExtResource("2_p30lw")
+region = Rect2(448, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nyxoy"]
+atlas = ExtResource("2_p30lw")
+region = Rect2(448, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i5wmt"]
+atlas = ExtResource("2_p30lw")
+region = Rect2(432, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j0e8w"]
+atlas = ExtResource("2_p30lw")
+region = Rect2(416, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0urj6"]
+atlas = ExtResource("2_p30lw")
+region = Rect2(400, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cjjgf"]
+atlas = ExtResource("2_p30lw")
+region = Rect2(384, 0, 16, 17)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nyxoy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uupg5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wxhjm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1qja")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_524dr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u8f5h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nyxoy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i5wmt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j0e8w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0urj6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cjjgf")
+}],
+"loop": true,
+"name": &"flying",
+"speed": 20.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i5wmt"]
+radius = 7.07107
+
+[node name="PoisonBall" type="Area2D"]
+script = ExtResource("1_wxhjm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_nyxoy")
+animation = &"flying"
+autoplay = "flying"
+frame_progress = 0.506092
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_i5wmt")
+
+[node name="DistanceTimer" type="Timer" parent="."]
+one_shot = true

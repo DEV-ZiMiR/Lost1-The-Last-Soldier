@@ -1,0 +1,295 @@
+[gd_scene load_steps=9 format=3 uid="uid://crxndni822qdi"]
+
+[ext_resource type="Script" uid="uid://cd4ulqdrvy4p4" path="res://scripts/ui/teleport_menu.gd" id="1_bwjbf"]
+[ext_resource type="Texture2D" uid="uid://cyxkkyemf4i26" path="res://assets/Textures/UI/inventory/GUI7.png" id="1_duiy3"]
+[ext_resource type="FontFile" uid="uid://bt0civ2kekjrg" path="res://assets/Fonts/Ubuntu-Medium.ttf" id="2_r838n"]
+[ext_resource type="Texture2D" uid="uid://daiyltugr4bg1" path="res://assets/Textures/UI/common/GUI6.png" id="3_0m6hc"]
+[ext_resource type="Texture2D" uid="uid://bhgcbmrbqrsvv" path="res://assets/Textures/UI/common/GUI4.png" id="4_bwjbf"]
+[ext_resource type="Texture2D" uid="uid://nac8k8pp2ff5" path="res://assets/Textures/UI/common/GUI5.png" id="5_5crki"]
+[ext_resource type="FontFile" uid="uid://1yhfjd0e0144" path="res://assets/Fonts/Ubuntu-BoldItalic.ttf" id="6_eckea"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r838n"]
+texture = ExtResource("1_duiy3")
+
+[node name="TeleportMenu" type="Panel"]
+process_mode = 3
+visible = false
+z_index = 30
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bwjbf")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -310.0
+offset_top = -210.0
+offset_right = 310.0
+offset_bottom = 210.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_r838n")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 48.0
+offset_right = 1125.0
+offset_bottom = 277.0
+scale = Vector2(0.3, 0.3)
+theme_override_constants/outline_size = 18
+theme_override_fonts/font = ExtResource("2_r838n")
+theme_override_font_sizes/font_size = 100
+text = "Choose place where 
+you want to teleport"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.09200001
+anchor_top = 0.11400001
+anchor_right = 0.90800005
+anchor_bottom = 0.8880001
+offset_left = -0.04000473
+offset_top = 85.119995
+offset_right = 0.039978027
+offset_bottom = 2.039978
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/VBoxContainer"]
+process_mode = 3
+custom_minimum_size = Vector2(100, 170)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TeleportPlace1" type="TextureButton" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer"]
+process_mode = 3
+custom_minimum_size = Vector2(200, 55)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_0m6hc")
+texture_pressed = ExtResource("4_bwjbf")
+texture_hover = ExtResource("5_5crki")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer/TeleportPlace1"]
+layout_mode = 0
+offset_right = 1000.0
+offset_bottom = 275.0
+scale = Vector2(0.2, 0.2)
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = ExtResource("6_eckea")
+theme_override_font_sizes/font_size = 130
+text = "Spawn"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TeleportPlace2" type="TextureButton" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer"]
+process_mode = 3
+custom_minimum_size = Vector2(200, 55)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_0m6hc")
+texture_pressed = ExtResource("4_bwjbf")
+texture_hover = ExtResource("5_5crki")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer/TeleportPlace2"]
+layout_mode = 0
+offset_right = 1000.0
+offset_bottom = 275.0
+scale = Vector2(0.2, 0.2)
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = ExtResource("6_eckea")
+theme_override_font_sizes/font_size = 130
+text = "Forest"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TeleportPlace3" type="TextureButton" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer"]
+process_mode = 3
+custom_minimum_size = Vector2(200, 55)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_0m6hc")
+texture_pressed = ExtResource("4_bwjbf")
+texture_hover = ExtResource("5_5crki")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer/TeleportPlace3"]
+layout_mode = 0
+offset_right = 1000.0
+offset_bottom = 275.0
+scale = Vector2(0.2, 0.2)
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = ExtResource("6_eckea")
+theme_override_font_sizes/font_size = 130
+text = "Darkforest"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TeleportPlace4" type="TextureButton" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 55)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_0m6hc")
+texture_pressed = ExtResource("4_bwjbf")
+texture_hover = ExtResource("5_5crki")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer/TeleportPlace4"]
+layout_mode = 0
+offset_right = 1000.0
+offset_bottom = 275.0
+scale = Vector2(0.2, 0.2)
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = ExtResource("6_eckea")
+theme_override_font_sizes/font_size = 130
+text = "Flame Lands"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TeleportPlace5" type="TextureButton" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 55)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_0m6hc")
+texture_pressed = ExtResource("4_bwjbf")
+texture_hover = ExtResource("5_5crki")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer/TeleportPlace5"]
+layout_mode = 0
+offset_right = 1000.0
+offset_bottom = 275.0
+scale = Vector2(0.2, 0.2)
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = ExtResource("6_eckea")
+theme_override_font_sizes/font_size = 130
+text = "Snowy Cliffs"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TeleportPlace6" type="TextureButton" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 55)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_0m6hc")
+texture_pressed = ExtResource("4_bwjbf")
+texture_hover = ExtResource("5_5crki")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer/TeleportPlace6"]
+layout_mode = 0
+offset_right = 1000.0
+offset_bottom = 275.0
+scale = Vector2(0.2, 0.2)
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = ExtResource("6_eckea")
+theme_override_font_sizes/font_size = 130
+text = "Jungle"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TeleportPlace7" type="TextureButton" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 55)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_0m6hc")
+texture_pressed = ExtResource("4_bwjbf")
+texture_hover = ExtResource("5_5crki")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer/TeleportPlace7"]
+layout_mode = 0
+offset_right = 1000.0
+offset_bottom = 275.0
+scale = Vector2(0.2, 0.2)
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = ExtResource("6_eckea")
+theme_override_font_sizes/font_size = 130
+text = "Fallen Kingdom"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="TeleportPlace8" type="TextureButton" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 55)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_0m6hc")
+texture_pressed = ExtResource("4_bwjbf")
+texture_hover = ExtResource("5_5crki")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/ScrollContainer/VBoxContainer/TeleportPlace8"]
+layout_mode = 0
+offset_right = 1000.0
+offset_bottom = 275.0
+scale = Vector2(0.2, 0.2)
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = ExtResource("6_eckea")
+theme_override_font_sizes/font_size = 130
+text = "Ruined Civilization"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="CancelButton" type="TextureButton" parent="Panel/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 55)
+layout_mode = 2
+size_flags_horizontal = 6
+texture_normal = ExtResource("3_0m6hc")
+texture_pressed = ExtResource("4_bwjbf")
+texture_hover = ExtResource("5_5crki")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer/CancelButton"]
+layout_mode = 0
+offset_right = 1000.0
+offset_bottom = 275.0
+scale = Vector2(0.2, 0.2)
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = ExtResource("6_eckea")
+theme_override_font_sizes/font_size = 130
+text = "Cancel"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TeleportButton" type="TextureButton" parent="Panel/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 55)
+layout_mode = 2
+size_flags_horizontal = 6
+texture_normal = ExtResource("3_0m6hc")
+texture_pressed = ExtResource("4_bwjbf")
+texture_hover = ExtResource("5_5crki")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer/TeleportButton"]
+layout_mode = 0
+offset_right = 1000.0
+offset_bottom = 275.0
+scale = Vector2(0.2, 0.2)
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = ExtResource("6_eckea")
+theme_override_font_sizes/font_size = 130
+text = "Teleport"
+horizontal_alignment = 1
+vertical_alignment = 1

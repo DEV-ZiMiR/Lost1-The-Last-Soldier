@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://brv1h1kjxhhfa"]
+
+[sub_resource type="Gradient" id="Gradient_4b4cc"]
+colors = PackedColorArray(0.114084, 0.306651, 0.143454, 1, 0.00425718, 0.173842, 0.00346177, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_r21oi"]
+gradient = SubResource("Gradient_4b4cc")
+width = 3
+height = 3
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_4b4cc"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(1.8, 1.8, 1)
+angle_min = -180.0
+angle_max = 180.0
+gravity = Vector3(0, 98, 0)
+
+[node name="ToxicTrail" type="Node2D"]
+
+[node name="Particles" type="GPUParticles2D" parent="."]
+amount = 16
+texture = SubResource("GradientTexture2D_r21oi")
+lifetime = 0.6
+local_coords = true
+trail_enabled = true
+trail_lifetime = 0.36
+trail_sections = 6
+trail_section_subdivisions = 2
+process_material = SubResource("ParticleProcessMaterial_4b4cc")

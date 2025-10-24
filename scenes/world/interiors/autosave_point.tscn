@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://yd83vdtgarxq"]
+
+[ext_resource type="Script" uid="uid://bmign6itostx5" path="res://scripts/world/autosave_point.gd" id="1_odqn4"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_pm8fp"]
+b = Vector2(0, 216)
+
+[node name="AutosavePoint" type="Area2D"]
+script = ExtResource("1_odqn4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -183)
+shape = SubResource("SegmentShape2D_pm8fp")

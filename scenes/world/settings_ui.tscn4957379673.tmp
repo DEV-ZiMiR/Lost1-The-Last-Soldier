@@ -1,0 +1,153 @@
+[gd_scene load_steps=6 format=3 uid="uid://dqx5ixhah6lwr"]
+
+[ext_resource type="Script" uid="uid://dqacg170s6ys3" path="res://scripts/world/settings_ui.gd" id="1_8pchm"]
+[ext_resource type="Texture2D" uid="uid://dba0fg41mgvd6" path="res://assets/Textures/Maps/backgrounds/Background.png" id="1_pjmnn"]
+[ext_resource type="FontFile" uid="uid://bt0civ2kekjrg" path="res://assets/Fonts/Ubuntu-Medium.ttf" id="2_rffr5"]
+[ext_resource type="FontFile" uid="uid://1yhfjd0e0144" path="res://assets/Fonts/Ubuntu-BoldItalic.ttf" id="3_0ua81"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8pchm"]
+texture = ExtResource("1_pjmnn")
+expand_margin_top = 222.0
+
+[node name="SettingsUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8pchm")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_8pchm")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -148.0
+offset_right = 148.0
+offset_bottom = 188.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("2_rffr5")
+theme_override_font_sizes/font_size = 62
+text = "Settings
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+custom_minimum_size = Vector2(900, 450)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.54
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/ScrollContainer"]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GameVolume" type="HBoxContainer" parent="Panel/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/ScrollContainer/VBoxContainer/GameVolume"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("3_0ua81")
+theme_override_font_sizes/font_size = 44
+text = "Volume"
+horizontal_alignment = 1
+
+[node name="HSlider" type="HSlider" parent="Panel/ScrollContainer/VBoxContainer/GameVolume"]
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+rounded = true
+
+[node name="LineEdit" type="LineEdit" parent="Panel/ScrollContainer/VBoxContainer/GameVolume"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="DisplayMode" type="HBoxContainer" parent="Panel/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/ScrollContainer/VBoxContainer/DisplayMode"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("3_0ua81")
+theme_override_font_sizes/font_size = 39
+text = "Display Mode"
+horizontal_alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="Panel/ScrollContainer/VBoxContainer/DisplayMode"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("2_rffr5")
+theme_override_font_sizes/font_size = 32
+item_count = 3
+popup/item_0/text = "Fullscreen"
+popup/item_0/id = 0
+popup/item_1/text = "Fullscreen windowed"
+popup/item_1/id = 1
+popup/item_2/text = "Windowed"
+popup/item_2/id = 2
+
+[node name="Language" type="HBoxContainer" parent="Panel/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/ScrollContainer/VBoxContainer/Language"]
+custom_minimum_size = Vector2(255, 0)
+layout_mode = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("3_0ua81")
+theme_override_font_sizes/font_size = 44
+text = "Language"
+horizontal_alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="Panel/ScrollContainer/VBoxContainer/Language"]
+custom_minimum_size = Vector2(350, 50)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("2_rffr5")
+theme_override_font_sizes/font_size = 32
+item_count = 2
+popup/item_0/text = "Українська"
+popup/item_0/id = 0
+popup/item_1/text = "English"
+popup/item_1/id = 1
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2

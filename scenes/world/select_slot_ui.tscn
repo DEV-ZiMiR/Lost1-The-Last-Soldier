@@ -1,0 +1,160 @@
+[gd_scene load_steps=10 format=3 uid="uid://bruhouj1ckw6u"]
+
+[ext_resource type="Script" uid="uid://cf6mlgpdftfst" path="res://scripts/world/select_slot_ui.gd" id="1_8sjxv"]
+[ext_resource type="Texture2D" uid="uid://dba0fg41mgvd6" path="res://assets/Textures/Maps/backgrounds/Background.png" id="2_ib6vc"]
+[ext_resource type="FontFile" uid="uid://bt0civ2kekjrg" path="res://assets/Fonts/Ubuntu-Medium.ttf" id="3_cnt4c"]
+[ext_resource type="Texture2D" uid="uid://daiyltugr4bg1" path="res://assets/Textures/UI/common/GUI6.png" id="4_7yjwl"]
+[ext_resource type="Texture2D" uid="uid://bhgcbmrbqrsvv" path="res://assets/Textures/UI/common/GUI4.png" id="5_7spuj"]
+[ext_resource type="Texture2D" uid="uid://nac8k8pp2ff5" path="res://assets/Textures/UI/common/GUI5.png" id="6_xxb4w"]
+[ext_resource type="FontFile" uid="uid://1yhfjd0e0144" path="res://assets/Fonts/Ubuntu-BoldItalic.ttf" id="7_3moes"]
+[ext_resource type="Texture2D" uid="uid://8apt04l5ncld" path="res://assets/Textures/UI/common/Chevron-Arrow-Left.png" id="8_cnt4c"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s2guw"]
+texture = ExtResource("2_ib6vc")
+expand_margin_top = 222.0
+
+[node name="SelectSlotUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8sjxv")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_s2guw")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+custom_minimum_size = Vector2(650, 500)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -325.0
+offset_top = -275.0
+offset_right = 325.0
+offset_bottom = 225.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("3_cnt4c")
+theme_override_font_sizes/font_size = 62
+text = "Select Slot"
+horizontal_alignment = 1
+
+[node name="SlotButton1" type="TextureButton" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(240, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("4_7yjwl")
+texture_pressed = ExtResource("5_7spuj")
+texture_hover = ExtResource("6_xxb4w")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/SlotButton1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_3moes")
+theme_override_font_sizes/font_size = 36
+text = "Slot 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SlotButton2" type="TextureButton" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(240, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("4_7yjwl")
+texture_pressed = ExtResource("5_7spuj")
+texture_hover = ExtResource("6_xxb4w")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/SlotButton2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_3moes")
+theme_override_font_sizes/font_size = 36
+text = "Slot 2	"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SlotButton3" type="TextureButton" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(240, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("4_7yjwl")
+texture_pressed = ExtResource("5_7spuj")
+texture_hover = ExtResource("6_xxb4w")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/SlotButton3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_3moes")
+theme_override_font_sizes/font_size = 36
+text = "Slot 3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SlotButton4" type="TextureButton" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(240, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("4_7yjwl")
+texture_pressed = ExtResource("5_7spuj")
+texture_hover = ExtResource("6_xxb4w")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/SlotButton4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_3moes")
+theme_override_font_sizes/font_size = 36
+text = "Autosave"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButton" type="TextureButton" parent="Panel"]
+custom_minimum_size = Vector2(25, 35)
+layout_mode = 0
+offset_left = 25.0
+offset_top = 25.0
+offset_right = 50.0
+offset_bottom = 60.0
+texture_normal = ExtResource("8_cnt4c")
+texture_pressed = ExtResource("8_cnt4c")
+texture_hover = ExtResource("8_cnt4c")
+stretch_mode = 0

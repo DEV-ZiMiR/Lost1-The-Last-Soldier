@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdeegvkeekv21"]
+
+[ext_resource type="Script" uid="uid://be2ffwrjal38l" path="res://scripts/items/pickup_weapon.gd" id="1_alyss"]
+[ext_resource type="Resource" uid="uid://dr7ii83ebuje4" path="res://data/item_data/items/sword2.tres" id="2_jwddr"]
+[ext_resource type="Texture2D" uid="uid://srvhtgvjremt" path="res://assets/Textures/Items/weapons/melee/swords/sword_02c.png" id="2_x62v3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bncvo"]
+radius = 19.0
+height = 72.0
+
+[node name="PickupWeapon" type="Area2D"]
+z_index = 50
+priority = 1
+script = ExtResource("1_alyss")
+item_data = ExtResource("2_jwddr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_bncvo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_x62v3")

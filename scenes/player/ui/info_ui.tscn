@@ -1,0 +1,132 @@
+[gd_scene load_steps=7 format=3 uid="uid://c0w5wnx2wqnqc"]
+
+[ext_resource type="Script" uid="uid://cpgwluqpgn33o" path="res://scripts/ui/info_ui.gd" id="1_lk5f7"]
+[ext_resource type="Texture2D" uid="uid://dba0fg41mgvd6" path="res://assets/Textures/Maps/backgrounds/Background.png" id="1_v01ff"]
+[ext_resource type="PackedScene" uid="uid://bn4hjcqjmlort" path="res://scenes/player/ui/action_info_panel.tscn" id="3_86iqd"]
+[ext_resource type="Texture2D" uid="uid://8apt04l5ncld" path="res://assets/Textures/UI/common/Chevron-Arrow-Left.png" id="6_snfm3"]
+[ext_resource type="FontFile" uid="uid://bt0civ2kekjrg" path="res://assets/Fonts/Ubuntu-Medium.ttf" id="7_gbp2i"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gj64v"]
+texture = ExtResource("1_v01ff")
+expand_margin_top = 222.0
+
+[node name="InfoUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lk5f7")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_gj64v")
+
+[node name="Label" type="Label" parent="Panel"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+offset_left = 251.0
+offset_top = 15.0
+offset_right = 901.0
+offset_bottom = 135.0
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("7_gbp2i")
+theme_override_font_sizes/font_size = 62
+text = "Control"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+custom_minimum_size = Vector2(700, 500)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -224.0
+offset_right = 350.0
+offset_bottom = 276.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="ActionInfoPanel" parent="Panel/ScrollContainer/VBoxContainer" instance=ExtResource("3_86iqd")]
+layout_mode = 2
+action_type = 1
+button1 = 1
+
+[node name="ActionInfoPanel2" parent="Panel/ScrollContainer/VBoxContainer" instance=ExtResource("3_86iqd")]
+layout_mode = 2
+
+[node name="ActionInfoPanel3" parent="Panel/ScrollContainer/VBoxContainer" instance=ExtResource("3_86iqd")]
+layout_mode = 2
+action_type = 2
+_button_count = 2
+button_count = 2
+button1 = 5
+button2 = 7
+
+[node name="ActionInfoPanel4" parent="Panel/ScrollContainer/VBoxContainer" instance=ExtResource("3_86iqd")]
+layout_mode = 2
+action_type = 3
+button1 = 6
+
+[node name="ActionInfoPanel5" parent="Panel/ScrollContainer/VBoxContainer" instance=ExtResource("3_86iqd")]
+layout_mode = 2
+action_type = 4
+_button_count = 2
+button_count = 2
+button1 = 10
+button2 = 11
+
+[node name="ActionInfoPanel6" parent="Panel/ScrollContainer/VBoxContainer" instance=ExtResource("3_86iqd")]
+layout_mode = 2
+action_type = 5
+button1 = 9
+
+[node name="ActionInfoPanel7" parent="Panel/ScrollContainer/VBoxContainer" instance=ExtResource("3_86iqd")]
+layout_mode = 2
+action_type = 6
+button1 = 8
+
+[node name="ActionInfoPanel8" parent="Panel/ScrollContainer/VBoxContainer" instance=ExtResource("3_86iqd")]
+layout_mode = 2
+action_type = 7
+button1 = 3
+
+[node name="ActionInfoPanel9" parent="Panel/ScrollContainer/VBoxContainer" instance=ExtResource("3_86iqd")]
+layout_mode = 2
+action_type = 8
+_button_count = 2
+button_count = 2
+button1 = 5
+button2 = 2
+
+[node name="ActionInfoPanel10" parent="Panel/ScrollContainer/VBoxContainer" instance=ExtResource("3_86iqd")]
+layout_mode = 2
+action_type = 9
+button1 = 12
+
+[node name="BackButton" type="TextureButton" parent="Panel"]
+custom_minimum_size = Vector2(25, 35)
+layout_mode = 0
+offset_left = 25.0
+offset_top = 25.0
+offset_right = 50.0
+offset_bottom = 60.0
+texture_normal = ExtResource("6_snfm3")
+texture_pressed = ExtResource("6_snfm3")
+texture_hover = ExtResource("6_snfm3")
+stretch_mode = 0

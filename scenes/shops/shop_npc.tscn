@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://crq88agyati5u"]
+
+[ext_resource type="Script" uid="uid://cv7c3b2cfo567" path="res://scripts/shop/shop_npc.gd" id="1_6cfpn"]
+[ext_resource type="Texture2D" uid="uid://04kki28k867b" path="res://assets/Textures/UI/shop/shop_cart_sized.png" id="1_q15fu"]
+[ext_resource type="FontFile" uid="uid://y3dgscraj716" path="res://assets/Fonts/WDXLLubrifontTC-Regular.ttf" id="2_vb0ie"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vb0ie"]
+radius = 30.0
+height = 158.0
+
+[node name="ShopNPC" type="Area2D"]
+script = ExtResource("1_6cfpn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2.38419e-07, -7.62939e-06)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_q15fu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5, 5)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_vb0ie")
+
+[node name="InteractionLabel" type="Label" parent="."]
+offset_left = -14.0
+offset_top = 15.0
+offset_right = 392.0
+offset_bottom = 256.0
+scale = Vector2(0.0556522, 0.0606942)
+theme_override_fonts/font = ExtResource("2_vb0ie")
+theme_override_font_sizes/font_size = 100
+text = "press \"E\" to
+enter shop"
+metadata/_edit_use_anchors_ = true

@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://1iuxh5vbj5rl"]
+
+[ext_resource type="Script" uid="uid://0i1ssmd2xdmb" path="res://scripts/enemies/monster_spawner.gd" id="1_b0yl8"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_racb8"]
+radius = 11.0
+height = 674.0
+
+[node name="MonsterSpawner" type="Node2D"]
+script = ExtResource("1_b0yl8")
+
+[node name="DetectionArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_racb8")
+
+[node name="SpawnPoints" type="Node2D" parent="."]
+
+[node name="SpawnPoint1" type="Marker2D" parent="SpawnPoints"]
+
+[node name="SpawnPoint2" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(150, 0)
+
+[node name="SpawnPoint3" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(75, 0)
+
+[node name="SpawnPoint4" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(-75, 0)
+
+[node name="SpawnPoint5" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(-150, 0)

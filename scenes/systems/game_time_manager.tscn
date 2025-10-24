@@ -1,0 +1,35 @@
+[gd_scene load_steps=8 format=3 uid="uid://drr2l10sbqeft"]
+
+[ext_resource type="Script" uid="uid://bjpasaov7qd7m" path="res://scripts/systems/game_time_manager.gd" id="1_fnfbi"]
+[ext_resource type="PackedScene" uid="uid://d37g7jcv2pwfe" path="res://scenes/world/main_menu.tscn" id="2_01tqs"]
+[ext_resource type="Shader" uid="uid://crnrtul7b7dcf" path="res://scripts/shaders/game_time_manager.gdshader" id="2_wf1i5"]
+[ext_resource type="PackedScene" uid="uid://dqx5ixhah6lwr" path="res://scenes/world/settings_ui.tscn" id="3_cue4a"]
+[ext_resource type="PackedScene" uid="uid://on5sudhuix5p" path="res://scenes/world/world_select_ui.tscn" id="4_t20qa"]
+[ext_resource type="PackedScene" uid="uid://bruhouj1ckw6u" path="res://scenes/world/select_slot_ui.tscn" id="5_y5rnd"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1dkop"]
+shader = ExtResource("2_wf1i5")
+shader_parameter/u_brightness = 1.0
+shader_parameter/u_contrast = 1.0
+shader_parameter/u_saturation = 1.0
+shader_parameter/u_tint = Color(1, 1, 1, 1)
+
+[node name="GameTimeManager" type="Node2D"]
+script = ExtResource("1_fnfbi")
+dusk_len = 8.0
+night_tint = Color(0.28235295, 0.28627452, 0.50980395, 0.9019608)
+dawn_tint = Color(0.9999998, 0.9007174, 0.77161527, 1)
+dusk_tint = Color(0.89067477, 0.6315837, 0.18338564, 1)
+night_brightness = 0.35
+paused_scene_resources = Array[PackedScene]([ExtResource("2_01tqs"), ExtResource("3_cue4a"), ExtResource("4_t20qa"), ExtResource("5_y5rnd")])
+
+[node name="PostFX" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="DayNightFX" type="ColorRect" parent="PostFX"]
+material = SubResource("ShaderMaterial_1dkop")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
