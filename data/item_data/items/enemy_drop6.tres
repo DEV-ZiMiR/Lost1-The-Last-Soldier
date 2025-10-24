@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://oprkcqgwtfq3"]
+
+[ext_resource type="Texture2D" uid="uid://d27ttpd8yf4vj" path="res://assets/Textures/Items/materials/gem_01c.png" id="1_6eerr"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_jycee"]
+
+[resource]
+script = ExtResource("1_jycee")
+id = "quest_enemy_drop6"
+item_name = "Crystal of Sadnesss"
+description = "Crystal, that used in different types of swords"
+icon = ExtResource("1_6eerr")
+max_stack = 18
+type = 4
+is_equippable = false
+is_usable = false
+sort_priority = 1
+price = 140
+rarity = 3
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

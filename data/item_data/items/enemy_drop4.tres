@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://b7lu7iebl3ik"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_jnaa3"]
+[ext_resource type="Texture2D" uid="uid://diddxikopr1ip" path="res://assets/Textures/Items/materials/ingot_01d.png" id="1_pawke"]
+
+[resource]
+script = ExtResource("1_jnaa3")
+id = "quest_enemy_drop4"
+item_name = "Golden Ingot"
+description = "Gold always been very expensive"
+icon = ExtResource("1_pawke")
+is_stackable = true
+max_stack = 30
+type = 4
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 0
+is_equippable = false
+is_usable = false
+sort_priority = 1
+price = 50
+rarity = 2
+armor_type = 0
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

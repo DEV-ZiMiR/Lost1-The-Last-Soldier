@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://b0kuyx4gvyhul"]
+
+[ext_resource type="Texture2D" uid="uid://y8ji3bnqmmjb" path="res://assets/Textures/Items/armor/suits/fb1876.png" id="1_em64s"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_vmgkk"]
+
+[resource]
+script = ExtResource("1_vmgkk")
+id = "armor_suit1"
+item_name = "Used Suit"
+description = "Basic used millitary clothes"
+icon = ExtResource("1_em64s")
+is_stackable = true
+max_stack = 1
+type = 3
+damage_bonus = 0
+armor_bonus = 4
+hp_bonus = 0
+is_equippable = true
+is_usable = true
+sort_priority = 5
+price = 10
+armor_type = 2
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

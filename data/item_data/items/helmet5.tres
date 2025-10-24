@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://ccuymyw60lk1k"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_4clpb"]
+[ext_resource type="Texture2D" uid="uid://43gem2blq2tq" path="res://assets/Textures/Items/armor/helmets/helmet_02e.png" id="1_6dlua"]
+
+[resource]
+script = ExtResource("1_4clpb")
+id = "armor_helmet5"
+item_name = "Helmet \"2033\""
+description = "Anybody knows where it's from, but who cares?"
+icon = ExtResource("1_6dlua")
+is_stackable = true
+max_stack = 1
+type = 3
+damage_bonus = 0
+armor_bonus = 70
+hp_bonus = 0
+is_equippable = true
+is_usable = true
+sort_priority = 6
+price = 300
+rarity = 4
+armor_type = 1
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

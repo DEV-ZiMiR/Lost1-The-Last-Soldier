@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://cwfdrftchxvg8"]
+
+[ext_resource type="Texture2D" uid="uid://5jubc8x44xur" path="res://assets/Textures/Items/misc/spellbook_02c.png" id="1_h1gd3"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_jgw5n"]
+
+[resource]
+script = ExtResource("1_jgw5n")
+id = "player_teleport"
+item_name = "Teleoport"
+description = "With this thing you can teleport anywhere..."
+icon = ExtResource("1_h1gd3")
+max_stack = 1
+misc_type = 1
+sort_priority = 9
+price = 8000
+rarity = 5
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

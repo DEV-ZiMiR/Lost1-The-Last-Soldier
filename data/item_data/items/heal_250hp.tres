@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://rlcjwav7764w"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_kbvty"]
+[ext_resource type="Texture2D" uid="uid://bhl2i15nhew0v" path="res://assets/Textures/Items/potions/fb526.png" id="1_np8gh"]
+
+[resource]
+script = ExtResource("1_kbvty")
+id = "heal_250hp"
+item_name = "Pizza"
+description = "Yummy!"
+icon = ExtResource("1_np8gh")
+is_stackable = true
+max_stack = 5
+type = 1
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 250
+is_equippable = true
+is_usable = true
+sort_priority = 2
+price = 950
+rarity = 5
+armor_type = 0
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

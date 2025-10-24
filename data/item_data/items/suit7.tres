@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://rg4p7ol4jhip"]
+
+[ext_resource type="Texture2D" uid="uid://gabdqkekft3" path="res://assets/Textures/Items/armor/suits/fb2073.png" id="1_tl385"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="2_856yw"]
+
+[resource]
+script = ExtResource("2_856yw")
+id = "armor_suit7"
+item_name = "Modern Suit"
+description = "New technology!"
+icon = ExtResource("1_tl385")
+is_stackable = true
+max_stack = 1
+type = 3
+damage_bonus = 0
+armor_bonus = 150
+hp_bonus = 0
+is_equippable = true
+is_usable = true
+sort_priority = 5
+price = 1200
+rarity = 5
+armor_type = 2
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

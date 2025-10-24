@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://buxyukqf2swnu"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_fthkd"]
+[ext_resource type="Texture2D" uid="uid://poftgnvmm3g6" path="res://assets/Textures/Items/armor/helmets/helmet_02d.png" id="1_nsjel"]
+
+[resource]
+script = ExtResource("1_fthkd")
+id = "armor_helmet4"
+item_name = "Helmet of Winter"
+description = "Everyone thought it was just a legend, but it isn't..."
+icon = ExtResource("1_nsjel")
+is_stackable = true
+max_stack = 1
+type = 3
+damage_bonus = 0
+armor_bonus = 50
+hp_bonus = 0
+is_equippable = true
+is_usable = true
+sort_priority = 6
+price = 200
+rarity = 3
+armor_type = 1
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

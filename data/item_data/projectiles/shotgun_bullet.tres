@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ProjectileData" load_steps=2 format=3 uid="uid://cf4p3hjl4yq6p"]
+
+[ext_resource type="Script" uid="uid://gnry7k8m124u" path="res://data/ProjectileData.gd" id="1_eqx3o"]
+
+[resource]
+script = ExtResource("1_eqx3o")
+projectile_id = ""
+name = ""
+description = ""
+speed = 500
+effect = 0
+scale_x = 1.0
+scale_y = 1.0
+metadata/_custom_type_script = "uid://gnry7k8m124u"

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://ecw3sb3gv7sl"]
+
+[ext_resource type="Texture2D" uid="uid://cyd07sx6v5xkb" path="res://assets/Textures/Items/weapons/ranged/guns/GunsPack/Guns/AK47.png" id="1_6orxj"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_ddmis"]
+
+[resource]
+script = ExtResource("1_ddmis")
+id = "weapon_ar_ak47"
+item_name = "AK47"
+description = "Very popular AR"
+icon = ExtResource("1_6orxj")
+is_stackable = true
+max_stack = 1
+type = 2
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 0
+is_equippable = true
+is_usable = false
+sort_priority = 7
+price = 2800
+rarity = 5
+armor_type = 0
+weapon_type = 2
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

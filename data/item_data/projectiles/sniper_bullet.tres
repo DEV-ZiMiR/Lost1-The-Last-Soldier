@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ProjectileData" load_steps=3 format=3 uid="uid://cb7qbcvvrbfyl"]
+
+[ext_resource type="Script" uid="uid://gnry7k8m124u" path="res://data/ProjectileData.gd" id="1_occ2i"]
+[ext_resource type="Texture2D" uid="uid://ea6ffxghpsex" path="res://assets/Textures/Items/weapons/ranged/guns/GunsPack/Bullets/RifleAmmoBig.png" id="2_fllqq"]
+
+[resource]
+script = ExtResource("1_occ2i")
+projectile_id = "projectile_sniper_bullet"
+name = "Sniper Bullet"
+description = ""
+texture = ExtResource("2_fllqq")
+speed = 700
+effect = 0
+scale_x = 0.3
+scale_y = 0.3
+metadata/_custom_type_script = "uid://gnry7k8m124u"

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://q2yev51skiex"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_i5lp7"]
+[ext_resource type="Texture2D" uid="uid://dp4evtylgg0sy" path="res://assets/Textures/Items/potions/fb509.png" id="1_im3r1"]
+
+[resource]
+script = ExtResource("1_i5lp7")
+id = "heal_200hp"
+item_name = "Magical Drink"
+description = "Made by wizards"
+icon = ExtResource("1_im3r1")
+is_stackable = true
+max_stack = 2
+type = 1
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 200
+is_equippable = true
+is_usable = true
+sort_priority = 2
+price = 800
+rarity = 5
+armor_type = 0
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

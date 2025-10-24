@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://dj8shh3c4f7ak"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_1dxye"]
+[ext_resource type="Texture2D" uid="uid://lvfdwv80sagj" path="res://assets/Textures/Items/armor/vests/fb2050.png" id="1_van1q"]
+
+[resource]
+script = ExtResource("1_1dxye")
+id = "armor_vest6"
+item_name = "Knight Vest"
+description = "Vest that was used by knights"
+icon = ExtResource("1_van1q")
+is_stackable = true
+max_stack = 1
+type = 3
+damage_bonus = 0
+armor_bonus = 400
+hp_bonus = 0
+is_equippable = true
+is_usable = true
+sort_priority = 4
+price = 2300
+rarity = 5
+armor_type = 3
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://drr3p7cx7m32j"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_bqcos"]
+[ext_resource type="Texture2D" uid="uid://hed22q24mhn3" path="res://assets/Textures/Items/weapons/melee/katanas/sword_01c.png" id="1_v4ldv"]
+
+[resource]
+script = ExtResource("1_bqcos")
+id = "weapon_katana2"
+item_name = "Katana of the UE"
+description = "katana of the united empires, is 1 of 12 made katanas in 12 centurie"
+icon = ExtResource("1_v4ldv")
+is_stackable = true
+max_stack = 1
+type = 2
+damage_bonus = 99
+armor_bonus = 0
+hp_bonus = 0
+is_equippable = true
+is_usable = false
+sort_priority = 0
+price = 999
+rarity = 4
+armor_type = 0
+weapon_type = 1
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

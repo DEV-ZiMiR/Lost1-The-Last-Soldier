@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://bncfmectfcytp"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_thmee"]
+[ext_resource type="Texture2D" uid="uid://bfn17h0o8ttd1" path="res://assets/Textures/Items/materials/crystal_01a.png" id="1_v36ex"]
+
+[resource]
+script = ExtResource("1_thmee")
+id = "quest_enemy_drop7"
+item_name = "Heart of Jungle"
+description = "Very rare diamond"
+icon = ExtResource("1_v36ex")
+is_stackable = true
+max_stack = 8
+type = 4
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 0
+is_equippable = false
+is_usable = false
+sort_priority = 1
+price = 250
+rarity = 4
+armor_type = 0
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

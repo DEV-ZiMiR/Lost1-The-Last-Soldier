@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://b5xim8oqb37dt"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_3845f"]
+[ext_resource type="Texture2D" uid="uid://ctfffeffto31e" path="res://assets/Textures/Items/potions/cup_02b.png" id="1_y45lf"]
+
+[resource]
+script = ExtResource("1_3845f")
+id = "heal_75hp"
+item_name = "Jungle Tea"
+description = "Really strong potion, but also very tasty!"
+icon = ExtResource("1_y45lf")
+is_stackable = true
+max_stack = 10
+type = 1
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 75
+is_equippable = true
+is_usable = true
+sort_priority = 2
+price = 200
+rarity = 5
+armor_type = 0
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

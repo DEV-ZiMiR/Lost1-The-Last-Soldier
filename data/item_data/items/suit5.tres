@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://cdgu07o30xkvb"]
+
+[ext_resource type="Texture2D" uid="uid://cc88cidnhugrw" path="res://assets/Textures/Items/armor/suits/fb2074.png" id="1_1vumb"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_um02n"]
+
+[resource]
+script = ExtResource("1_um02n")
+id = "armor_suit5"
+item_name = "Winter Suit"
+description = "Warm, and very thick, great protect"
+icon = ExtResource("1_1vumb")
+is_stackable = true
+max_stack = 1
+type = 3
+damage_bonus = 0
+armor_bonus = 40
+hp_bonus = 0
+is_equippable = true
+is_usable = true
+sort_priority = 5
+price = 300
+rarity = 4
+armor_type = 2
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

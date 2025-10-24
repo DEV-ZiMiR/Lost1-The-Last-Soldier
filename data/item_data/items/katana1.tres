@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://cm3hqtc5pchj1"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_4nlhg"]
+[ext_resource type="Texture2D" uid="uid://bug6mygu61at7" path="res://assets/Textures/Items/weapons/melee/katanas/sword_01b.png" id="1_8mhxj"]
+
+[resource]
+script = ExtResource("1_4nlhg")
+id = "weapon_katana1"
+item_name = "Basic Katana"
+description = "Some samuraes even got here, to save their weapons"
+icon = ExtResource("1_8mhxj")
+is_stackable = true
+max_stack = 1
+type = 2
+damage_bonus = 39
+armor_bonus = 0
+hp_bonus = 0
+is_equippable = true
+is_usable = false
+sort_priority = 3
+price = 500
+rarity = 3
+armor_type = 0
+weapon_type = 1
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

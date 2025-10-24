@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://b8b3yc44ekgcj"]
+
+[ext_resource type="Texture2D" uid="uid://b37eaicnsloye" path="res://assets/Textures/Items/armor/suits/fb1887.png" id="1_j02v7"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_w2yit"]
+
+[resource]
+script = ExtResource("1_w2yit")
+id = "armor_suit3"
+item_name = "Sport Suit"
+description = "Very comfortable, really useful in battle!"
+icon = ExtResource("1_j02v7")
+is_stackable = true
+max_stack = 1
+type = 3
+damage_bonus = 0
+armor_bonus = 18
+hp_bonus = 0
+is_equippable = true
+is_usable = true
+sort_priority = 5
+price = 75
+rarity = 2
+armor_type = 2
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

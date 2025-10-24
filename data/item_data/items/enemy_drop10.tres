@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://b8kq5v0rdpgs4"]
+
+[ext_resource type="Texture2D" uid="uid://bju2b3uqmrr1w" path="res://assets/Textures/Items/materials/fb511.png" id="1_88iyv"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_ypbet"]
+
+[resource]
+script = ExtResource("1_ypbet")
+id = "quest_enemy_drop10"
+item_name = "Card"
+description = "Maybe there's some cash in it"
+icon = ExtResource("1_88iyv")
+is_stackable = true
+max_stack = 20
+type = 4
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 0
+is_equippable = false
+is_usable = false
+sort_priority = 1
+price = 1200
+rarity = 5
+armor_type = 0
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

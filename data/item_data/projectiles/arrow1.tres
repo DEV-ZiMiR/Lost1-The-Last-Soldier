@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ProjectileData" load_steps=3 format=3 uid="uid://cbe2jn3am44d2"]
+
+[ext_resource type="Script" uid="uid://gnry7k8m124u" path="res://data/ProjectileData.gd" id="1_opr02"]
+[ext_resource type="Texture2D" uid="uid://dbg0tntidemyt" path="res://assets/Textures/Items/weapons/ranged/arrows/EB_50.png" id="2_xko1y"]
+
+[resource]
+script = ExtResource("1_opr02")
+projectile_id = "projectile_arrow1"
+name = "Basic Arrow"
+description = "Basic arrow, wood stick with sharp metal on the end"
+texture = ExtResource("2_xko1y")
+speed = 250
+effect = 0
+scale_x = 0.3
+scale_y = 0.3
+metadata/_custom_type_script = "uid://gnry7k8m124u"

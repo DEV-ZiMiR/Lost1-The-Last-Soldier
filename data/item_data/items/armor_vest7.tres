@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://bsqoqa51dfxyx"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_1kkbw"]
+[ext_resource type="Texture2D" uid="uid://celmey48k0xrr" path="res://assets/Textures/Items/armor/vests/fb2049.png" id="1_1xgiw"]
+
+[resource]
+script = ExtResource("1_1kkbw")
+id = "armor_vest7"
+item_name = "Vest 3865-S"
+description = "Best vest in this city"
+icon = ExtResource("1_1xgiw")
+max_stack = 1
+type = 3
+armor_bonus = 750
+sort_priority = 4
+price = 3500
+rarity = 5
+armor_type = 3
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

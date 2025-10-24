@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ProjectileData" load_steps=3 format=3 uid="uid://ig80qsbeyb7t"]
+
+[ext_resource type="Script" uid="uid://gnry7k8m124u" path="res://data/ProjectileData.gd" id="1_j8tjx"]
+[ext_resource type="Texture2D" uid="uid://b4n7r3tcnyj5c" path="res://assets/Textures/Items/weapons/ranged/guns/GunsPack/Bullets/PistolAmmoBig.png" id="2_f6gqk"]
+
+[resource]
+script = ExtResource("1_j8tjx")
+projectile_id = "projectile_pistol_bullet"
+name = "Pistol Bullet"
+description = ""
+texture = ExtResource("2_f6gqk")
+speed = 400
+effect = 0
+scale_x = 0.2
+scale_y = 0.2
+metadata/_custom_type_script = "uid://gnry7k8m124u"

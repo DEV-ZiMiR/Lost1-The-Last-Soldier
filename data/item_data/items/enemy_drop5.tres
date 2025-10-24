@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://hakgplk1qisx"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_qhffa"]
+[ext_resource type="Texture2D" uid="uid://cyqcx4p735hw7" path="res://assets/Textures/Items/materials/pearl_01d.png" id="1_qk31o"]
+
+[resource]
+script = ExtResource("1_qhffa")
+id = "quest_enemy_drop5"
+item_name = "Green Pearl"
+description = "Pretty rare and expensive pearl"
+icon = ExtResource("1_qk31o")
+is_stackable = true
+max_stack = 15
+type = 4
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 0
+is_equippable = false
+is_usable = false
+sort_priority = 1
+price = 80
+rarity = 3
+armor_type = 0
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

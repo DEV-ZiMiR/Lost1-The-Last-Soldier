@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://big6dmgc3h8ub"]
+
+[ext_resource type="Texture2D" uid="uid://coyvmmr7g0t31" path="res://assets/Textures/Items/armor/suits/fb1868.png" id="1_7t2mx"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_dnrco"]
+
+[resource]
+script = ExtResource("1_dnrco")
+id = "armor_suit4"
+item_name = "Samurai Suit"
+description = "Were used by samuraes"
+icon = ExtResource("1_7t2mx")
+is_stackable = true
+max_stack = 1
+type = 3
+damage_bonus = 0
+armor_bonus = 24
+hp_bonus = 0
+is_equippable = true
+is_usable = true
+sort_priority = 5
+price = 120
+rarity = 3
+armor_type = 2
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

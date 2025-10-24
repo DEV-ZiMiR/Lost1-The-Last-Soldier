@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://cd8l40nh6uto4"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_hi08m"]
+[ext_resource type="Texture2D" uid="uid://c1y2by77sx40g" path="res://assets/Textures/Items/weapons/ranged/guns/GunsPack/Guns/M92.png" id="1_yhqqt"]
+
+[resource]
+script = ExtResource("1_hi08m")
+id = "weapon_pistol2"
+item_name = "Pistol M92"
+description = "Pistol used by police"
+icon = ExtResource("1_yhqqt")
+is_stackable = true
+max_stack = 1
+type = 2
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 0
+is_equippable = true
+is_usable = false
+sort_priority = 7
+price = 1400
+rarity = 4
+armor_type = 0
+weapon_type = 2
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

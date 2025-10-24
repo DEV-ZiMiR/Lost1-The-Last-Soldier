@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://crixc1rm2p2yd"]
+
+[ext_resource type="Texture2D" uid="uid://s4v00nyws28r" path="res://assets/Textures/Items/weapons/melee/swords/sword_03e.png" id="1_dm0wq"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_m1gjo"]
+
+[resource]
+script = ExtResource("1_m1gjo")
+id = "weapon_knife1"
+item_name = "Knife of Pain"
+description = "The strongest knife in whole WORLD"
+icon = ExtResource("1_dm0wq")
+is_stackable = true
+max_stack = 1
+type = 2
+damage_bonus = 149
+armor_bonus = 0
+hp_bonus = 0
+is_equippable = true
+is_usable = true
+sort_priority = 0
+price = 1500
+rarity = 5
+armor_type = 0
+weapon_type = 1
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

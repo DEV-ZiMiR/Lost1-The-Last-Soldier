@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://cm1q41hlwwrms"]
+
+[ext_resource type="Texture2D" uid="uid://cc5nla2rsbyyb" path="res://assets/Textures/Items/materials/fb2132.png" id="1_gm7dh"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_j2yio"]
+
+[resource]
+script = ExtResource("1_j2yio")
+id = "quest_enemy_drop11"
+item_name = "Strange Stone"
+description = "Nobody knows where it's from"
+icon = ExtResource("1_gm7dh")
+is_stackable = true
+max_stack = 20
+type = 0
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 0
+is_equippable = false
+is_usable = false
+sort_priority = 1
+price = 2400
+rarity = 5
+armor_type = 0
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

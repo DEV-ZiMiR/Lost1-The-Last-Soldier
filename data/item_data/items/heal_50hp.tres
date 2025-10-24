@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://chni4mmlnb5df"]
+
+[ext_resource type="Texture2D" uid="uid://dulopra3p6fou" path="res://assets/Textures/Items/potions/potion_03a.png" id="1_1p2e6"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_5d4lt"]
+
+[resource]
+script = ExtResource("1_5d4lt")
+id = "heal_50hp"
+item_name = "Big Potion"
+description = "Big size, nice option if your enemies have strong attack"
+icon = ExtResource("1_1p2e6")
+is_stackable = true
+max_stack = 4
+type = 1
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 50
+is_equippable = true
+is_usable = true
+sort_priority = 2
+price = 100
+rarity = 4
+armor_type = 0
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

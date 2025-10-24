@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://cvoov27y8q7wc"]
+
+[ext_resource type="Texture2D" uid="uid://ea6ffxghpsex" path="res://assets/Textures/Items/weapons/ranged/guns/GunsPack/Bullets/RifleAmmoBig.png" id="1_nfm0d"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_oiogb"]
+
+[resource]
+script = ExtResource("1_oiogb")
+id = "item_sniper_bullet"
+item_name = "Sniper Bullet"
+description = "Bullet for Sniper"
+icon = ExtResource("1_nfm0d")
+is_stackable = true
+max_stack = 20
+type = 0
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 0
+is_equippable = false
+is_usable = false
+sort_priority = 8
+price = 50
+rarity = 0
+armor_type = 0
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

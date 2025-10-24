@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ProjectileData" load_steps=3 format=3 uid="uid://df60n07dv0462"]
+
+[ext_resource type="Script" uid="uid://gnry7k8m124u" path="res://data/ProjectileData.gd" id="1_lyv1g"]
+[ext_resource type="Texture2D" uid="uid://ea6ffxghpsex" path="res://assets/Textures/Items/weapons/ranged/guns/GunsPack/Bullets/RifleAmmoBig.png" id="2_6nbmq"]
+
+[resource]
+script = ExtResource("1_lyv1g")
+projectile_id = "projectile_ar_bullet"
+name = "AR Bullet"
+description = ""
+texture = ExtResource("2_6nbmq")
+speed = 550
+effect = 0
+scale_x = 0.25
+scale_y = 0.25
+metadata/_custom_type_script = "uid://gnry7k8m124u"

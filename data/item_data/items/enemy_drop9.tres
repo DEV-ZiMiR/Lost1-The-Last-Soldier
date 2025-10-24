@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://d3xxghgfse6co"]
+
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_a8b40"]
+[ext_resource type="Texture2D" uid="uid://cbgfop3nnhnnj" path="res://assets/Textures/Items/materials/fb320.png" id="1_brhv5"]
+
+[resource]
+script = ExtResource("1_a8b40")
+id = "quest_enemy_drop9"
+item_name = "Very Demonic Stone"
+description = "Maybe this stone destroyed this kinghtom"
+icon = ExtResource("1_brhv5")
+is_stackable = true
+max_stack = 10
+type = 4
+damage_bonus = 0
+armor_bonus = 0
+hp_bonus = 0
+is_equippable = false
+is_usable = false
+sort_priority = 1
+price = 1000
+rarity = 5
+armor_type = 0
+weapon_type = 0
+metadata/_custom_type_script = "uid://dgt1dum18n71i"

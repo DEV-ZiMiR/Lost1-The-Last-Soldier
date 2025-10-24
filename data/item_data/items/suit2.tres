@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://4pbmrv7hosuq"]
+
+[ext_resource type="Texture2D" uid="uid://bw3ck8u5fwh8h" path="res://assets/Textures/Items/armor/suits/fb1877.png" id="1_4542y"]
+[ext_resource type="Script" uid="uid://dgt1dum18n71i" path="res://data/ItemData.gd" id="1_pw5yx"]
+
+[resource]
+script = ExtResource("1_pw5yx")
+id = "armor_suit2"
+item_name = "Basic Suit"
+description = "Not very strong, but protects quite well"
+icon = ExtResource("1_4542y")
+is_stackable = true
+max_stack = 1
+type = 3
+damage_bonus = 0
+armor_bonus = 10
+hp_bonus = 0
+is_equippable = true
+is_usable = true
+sort_priority = 5
+price = 35
+rarity = 1
+armor_type = 2
+metadata/_custom_type_script = "uid://dgt1dum18n71i"
