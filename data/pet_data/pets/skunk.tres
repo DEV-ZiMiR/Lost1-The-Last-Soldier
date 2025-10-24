@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="PetData" load_steps=5 format=3 uid="uid://bgk3dsvlili0l"]
+
+[ext_resource type="Script" uid="uid://bavnx5oeawlh7" path="res://data/Helpers/PetBuff.gd" id="1_u8kni"]
+[ext_resource type="Script" uid="uid://0fg17lfakvk4" path="res://data/PetData.gd" id="2_4je0b"]
+[ext_resource type="Texture2D" uid="uid://sfb5jlgi2oed" path="res://assets/Textures/Characters/pets/Basic Sprites 1x8.png" id="2_rig3i"]
+
+[sub_resource type="Resource" id="Resource_3ynpy"]
+script = ExtResource("1_u8kni")
+type = 2
+percent = 100.0
+metadata/_custom_type_script = "uid://bavnx5oeawlh7"
+
+[resource]
+script = ExtResource("2_4je0b")
+id = "pet_skunk"
+pet_name = "Skunk"
+icon = ExtResource("2_rig3i")
+rarity = 3
+buffs = Array[ExtResource("1_u8kni")]([SubResource("Resource_3ynpy")])
+price = 2200
+sell_price = 2100
+metadata/_custom_type_script = "uid://0fg17lfakvk4"

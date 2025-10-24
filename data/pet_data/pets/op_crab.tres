@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="PetData" load_steps=9 format=3 uid="uid://c8yryvh5rrmji"]
+
+[ext_resource type="Script" uid="uid://bavnx5oeawlh7" path="res://data/Helpers/PetBuff.gd" id="1_a8231"]
+[ext_resource type="Script" uid="uid://0fg17lfakvk4" path="res://data/PetData.gd" id="2_82dfp"]
+[ext_resource type="Texture2D" uid="uid://dwimu84c3ntbm" path="res://assets/Textures/Characters/pets/Basic Sprites 1x3.png" id="2_qkea4"]
+
+[sub_resource type="Resource" id="Resource_qa4ye"]
+script = ExtResource("1_a8231")
+type = 2
+percent = 30.0
+metadata/_custom_type_script = "uid://bavnx5oeawlh7"
+
+[sub_resource type="Resource" id="Resource_gvqal"]
+script = ExtResource("1_a8231")
+percent = 30.0
+metadata/_custom_type_script = "uid://bavnx5oeawlh7"
+
+[sub_resource type="Resource" id="Resource_sor5s"]
+script = ExtResource("1_a8231")
+type = 4
+percent = 50.0
+metadata/_custom_type_script = "uid://bavnx5oeawlh7"
+
+[sub_resource type="Resource" id="Resource_ior6i"]
+script = ExtResource("1_a8231")
+type = 1
+percent = 50.0
+metadata/_custom_type_script = "uid://bavnx5oeawlh7"
+
+[sub_resource type="Resource" id="Resource_owhmp"]
+script = ExtResource("1_a8231")
+type = 10
+percent = 33.0
+metadata/_custom_type_script = "uid://bavnx5oeawlh7"
+
+[resource]
+script = ExtResource("2_82dfp")
+id = "pet_op_crab"
+pet_name = "OP Crab"
+icon = ExtResource("2_qkea4")
+rarity = 4
+buffs = Array[ExtResource("1_a8231")]([SubResource("Resource_qa4ye"), SubResource("Resource_gvqal"), SubResource("Resource_sor5s"), SubResource("Resource_ior6i"), SubResource("Resource_owhmp")])
+metadata/_custom_type_script = "uid://0fg17lfakvk4"

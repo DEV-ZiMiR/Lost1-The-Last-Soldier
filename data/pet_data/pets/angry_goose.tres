@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="PetData" load_steps=5 format=3 uid="uid://mtd2pb60ghwg"]
+
+[ext_resource type="Script" uid="uid://bavnx5oeawlh7" path="res://data/Helpers/PetBuff.gd" id="1_otk7x"]
+[ext_resource type="Script" uid="uid://0fg17lfakvk4" path="res://data/PetData.gd" id="2_8gbmk"]
+[ext_resource type="Texture2D" uid="uid://15o3ffkgy27j" path="res://assets/Textures/Characters/pets/Basic Sprites 2x3.png" id="2_i3nfi"]
+
+[sub_resource type="Resource" id="Resource_8gbmk"]
+script = ExtResource("1_otk7x")
+type = 2
+percent = 15.0
+metadata/_custom_type_script = "uid://bavnx5oeawlh7"
+
+[resource]
+script = ExtResource("2_8gbmk")
+id = "pet_angry_goose"
+pet_name = "Angry Goose"
+icon = ExtResource("2_i3nfi")
+rarity = 1
+buffs = Array[ExtResource("1_otk7x")]([SubResource("Resource_8gbmk")])
+price = 350
+sell_price = 349
+metadata/_custom_type_script = "uid://0fg17lfakvk4"
