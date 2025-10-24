@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="Lost I: The Last Soldier (Alpha V0.7)"
-config/version="0.7.0"
-run/main_scene="uid://cjb1550odhbn8"
+config/name="Lost I: The Last Soldier (Alpha V0.7.1)"
+config/version="0.7.1"
+run/main_scene="uid://d37g7jcv2pwfe"
 config/features=PackedStringArray("4.5", "Forward Plus")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/show_image=false
